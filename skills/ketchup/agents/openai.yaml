@@ -1,6 +1,6 @@
 interface:
   display_name: "ketchup"
-  short_description: "Ketchup"
+  short_description: "Explain changes and every decision waiting on the user"
   default_prompt: "Use $ketchup for this task."
 policy:
   allow_implicit_invocation: false

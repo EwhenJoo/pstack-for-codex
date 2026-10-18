@@ -1,6 +1,6 @@
 # pstack for Codex
 
-`pstack-for-codex` is a Codex-native derivative of [pstack](https://github.com/cursor/plugins/tree/main/pstack). It packages deliberate engineering workflows as 55 explicit-only skills and 23 Poteto Mode playbooks.
+`pstack-for-codex` is a Codex-native derivative of [pstack](https://github.com/cursor/plugins/tree/main/pstack). It packages deliberate engineering workflows as 56 explicit-only skills and 23 Poteto Mode playbooks.
 
 Use `$poteto-mode` for a substantial engineering task. It selects a playbook, records the work as verifiable steps, and invokes narrower skills when the steps need them. The parent task keeps authority for integration, external writes, commits, pushes, and the final result.
 
@@ -21,7 +21,7 @@ codex plugin list --json
 
 Codex CLI `0.153.4` does not expose an offline runtime skill-index command. The release suite validates the skill catalog from the installed artifact; start a new task to exercise prompt-time skill discovery.
 
-All 55 skills require explicit invocation. Codex stores their full identities under the `pstack-for-codex` namespace. In a prompt, invoke a skill with its registered `$name`:
+All 56 skills require explicit invocation. Codex stores their full identities under the `pstack-for-codex` namespace. In a prompt, invoke a skill with its registered `$name`:
 
 ```text
 $poteto-mode add a --json flag to this command. Keep text output byte-identical. Verify both modes.
@@ -59,6 +59,7 @@ The other skills are useful when you want one specific operation:
 | [`$arena`](./skills/arena/SKILL.md) | Compare isolated attempts at the same brief. |
 | [`$swarm`](./skills/swarm/SKILL.md) | Cover independent slices or races and aggregate the result. |
 | [`$interrogate`](./skills/interrogate/SKILL.md) | Run a skeptical, multi-lens review of a diff with different verified model profiles when available. |
+| [`$create-formal-verification-skill`](./skills/create-formal-verification-skill/SKILL.md) | Verify one high-risk property and leave a repeatable project skill. |
 | [`$tdd`](./skills/tdd/SKILL.md) | Reproduce a bug with a failing test before fixing it. |
 | [`$no-comments`](./skills/no-comments/SKILL.md) | Review comments and remove ones that do not earn their place. |
 | [`$unslop`](./skills/unslop/SKILL.md) | Remove vague or machine-shaped prose. |
@@ -132,4 +133,4 @@ See [Codex adaptation notes](./docs/codex-adaptation.md) for the behavioral chan
 
 MIT. See [LICENSE](./LICENSE) and [NOTICE](./NOTICE).
 
-The 0.4.0 refresh tracks upstream pstack 0.15.24. It adds `$in-your-own-words`, `$ketchup`, and `$sharpen`, improves plan fence checks, and updates PR watching and forge-neutral stack handling. Codex authority, explicit-only discovery, profile inheritance, and supported history access remain enforced.
+The 0.5.0 refresh tracks upstream pstack 0.15.27. It adds `$create-formal-verification-skill`, expands `$ketchup` to cover every pending decision, and updates debugging, testing, type guidance, and verification cadence. Codex authority, explicit-only discovery, profile inheritance, and supported history access remain enforced.

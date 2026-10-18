@@ -1,6 +1,6 @@
 # Release evaluation evidence
 
-This directory is the release ledger for `pstack-for-codex` version `0.4.0`, derived from upstream pstack `0.15.24` at `1e5c90a4b6f249917bd21fe361b3a2a7deb741b8`. The immutable upstream file inventory is [`../upstream.lock.json`](../upstream.lock.json); [`cases/coverage.yaml`](cases/coverage.yaml) maps all 54 upstream skills and all 23 upstream playbooks, while [`cases/representative.yaml`](cases/representative.yaml) covers direct, indirect, incomplete-input, negative-trigger, unsupported-capability, setup, hook, and connector boundaries.
+This directory is the release ledger for `pstack-for-codex` version `0.5.0`, derived from upstream pstack `0.15.27` at `0148b78c56c72a1b8412055913c79f767095b217`. The immutable upstream file inventory is [`../upstream.lock.json`](../upstream.lock.json); [`cases/coverage.yaml`](cases/coverage.yaml) maps all 55 upstream skills and all 23 upstream playbooks, while [`cases/representative.yaml`](cases/representative.yaml) covers direct, indirect, incomplete-input, negative-trigger, unsupported-capability, setup, hook, and connector boundaries.
 
 ## Recorded environment
 
@@ -15,6 +15,10 @@ This directory is the release ledger for `pstack-for-codex` version `0.4.0`, der
 
 ## Release disposition
 
-All 55 registered skills are explicit-only. All 54 upstream skills and 23 playbooks have positive offline-contract outcomes and applicable authority, capability, and negative-trigger boundaries. Connector- and trust-dependent live activation is deferred, with the automation tasks paused. Polling latency, hook trust, connector availability, model diversity, and Bun availability remain declared limitations; none is presented as verified when it was not observable.
+All 56 registered skills are explicit-only. All 55 upstream skills and 23 playbooks have positive offline-contract outcomes and applicable authority, capability, and negative-trigger boundaries. Connector- and trust-dependent live activation is deferred, with the automation tasks paused. Polling latency, hook trust, connector availability, model diversity, and Bun availability remain declared limitations; none is presented as verified when it was not observable.
 
 Run `npm test` (or `npm run verify:release`) for the mandatory release gate. It runs offline verification followed by the installed-profile smoke and fails closed when the `codex` prerequisite is unavailable. A release is blocked by any failed test, missing coverage row, stale compatibility report, residual temporary profile/cache, unpaused Benny descriptor, or an unverified live-activation claim.
+
+## Current maintenance candidate
+
+The [2026-10-19 sync record](../maintenance/2026-10-19-sync.md) records the 0.5.0 candidate checks: 102 Node tests, 73 Bun tests, strict typecheck, source integrity, and an isolated installed smoke on codex-cli 0.163.0. Real interactive Codex/T3 discovery, model dispatch, ketchup output, and the new formal-verification workflow remain manual acceptance gaps.

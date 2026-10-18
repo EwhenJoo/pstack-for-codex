@@ -1,6 +1,6 @@
 # Route work through `$poteto-mode`
 
-`$poteto-mode` matches the request to one of 23 playbooks and tracks the selected steps. It invokes other skills only when those steps need them.
+`$poteto-mode` matches the request to one of 23 playbooks and tracks the selected steps. It invokes other skills only when those steps need them. Autopilot-full handles independent PRs; Autopilot-stack handles a dependent linear stack. Both keep the runtime authority gates.
 
 ![A dispatcher routes robots toward bug fix, feature, and investigation gates.](./images/router.jpg)
 

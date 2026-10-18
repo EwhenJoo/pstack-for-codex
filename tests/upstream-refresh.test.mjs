@@ -51,20 +51,17 @@ test("decision log initializes an empty file and preserves prior rows on append"
   assert.match(current, /'\=unsafe cell\tline break\tartifact\tpassed/);
 });
 
-test("refresh ledger pins every source delta and all five additions", async () => {
+test("refresh ledger pins every source delta and both additions", async () => {
   const map = JSON.parse(await fs.readFile(path.join(root, "compatibility/pstack-map.json"), "utf8"));
   const previous = new Map(map.refresh.fromFiles.map((entry) => [entry.path, entry.sha256]));
   const lock = JSON.parse(await fs.readFile(path.join(root, "upstream.lock.json"), "utf8"));
   const current = new Map(lock.files.map((entry) => [entry.path, entry.sha256]));
   const changed = [...current].filter(([name, hash]) => previous.get(name) !== hash);
-  assert.equal(changed.length, 87);
+  assert.equal(changed.length, 31);
   assert.deepEqual(new Set(map.refreshDecisions.map((entry) => entry.path)), new Set(changed.map(([name]) => name)));
   assert.deepEqual(map.refreshDecisions.filter((entry) => entry.kind === "added").map((entry) => entry.path).sort(), [
-    "plugin.json",
-    "skills/in-your-own-words/SKILL.md",
-    "skills/ketchup/SKILL.md",
-    "skills/poteto-mode/scripts/check-plan.test.ts",
-    "skills/sharpen/SKILL.md",
+    "docs/harness/claude-code.md",
+    "skills/create-formal-verification-skill/SKILL.md",
   ]);
   for (const decision of map.refreshDecisions) {
     assert.equal(decision.oldSha256, previous.get(decision.path) ?? null);

@@ -48,4 +48,4 @@ Setup does not activate Benny. It can reconcile exactly two `PAUSED` project aut
 
 Next: [Steer with principle names](./08-principles.md).
 
-Autopilot starts independent verification at code-ready and repeats after patch-changing pushes. Its verdict must match the patch at merge-ready. Authorized hourly heartbeats append the queue log each tick and message only when state changes.
+Autopilot swarm-verifies each code-ready head. A later rebase or minor fix gets one fresh independent verifier and affected checks; new behavior or a large new diff requires the full swarm again. Its verdict must match the patch at merge-ready. Authorized hourly heartbeats append the queue log each tick and message only when state changes.

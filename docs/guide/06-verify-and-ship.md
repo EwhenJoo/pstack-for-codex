@@ -26,6 +26,10 @@ The generated skill lives under `.agents/skills/verify-<app>/`. It contains laun
 
 Use `$maintain-verification-skill` to compare an existing verification skill with the current app. It edits only proven drift and reruns affected live checks.
 
+## Verify a property beyond test cases
+
+Invoke [`$create-formal-verification-skill`](../../skills/create-formal-verification-skill/SKILL.md) for a race, retry, parser, or invariant that ordinary tests rarely reach. It selects a verifier, states bounds and assumptions, and leaves a project-local explicit-only skill. Before handoff, that skill must catch an intentionally broken variant in an isolated copy of the real code. Findings remain visible; product fixes require authorization. An unavailable verifier leaves a draft, not a passing result.
+
 ## Review the diff
 
 Run the repository checks, inspect `git diff --check`, and use `$interrogate` for a skeptical review when the risk warrants it. Keep unsupported or trust-dependent checks visible as blockers or deferred operator gates.

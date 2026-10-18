@@ -1,6 +1,6 @@
 interface:
   display_name: "Principle Fix Root Causes"
-  short_description: "Apply when debugging. Trace each symptom to its root cause and fix it there; reproduce first,..."
+  short_description: "Trace the first fault and handle legitimate states"
   default_prompt: "Use $principle-fix-root-causes for this request."
 policy:
   products:
