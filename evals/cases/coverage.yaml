@@ -1188,6 +1188,28 @@
         "evidence": "required",
         "stop_condition": "required"
       }
+    },
+    {
+      "id": "skill:create-formal-verification-skill",
+      "kind": "skill",
+      "source": "skills/create-formal-verification-skill/SKILL.md",
+      "case": "skill-positive:create-formal-verification-skill",
+      "positive_outcome": "Explicit $create-formal-verification-skill invocation defines one property, requires an isolated broken-variant check, and leaves a bounded project skill or a draft when verification cannot run.",
+      "boundaries": [
+        "explicit-only",
+        "authority",
+        "capability",
+        "negative-trigger"
+      ],
+      "disposition": "explicit-only",
+      "verdict": "passed-offline-contract",
+      "grades": {
+        "workflow": "required",
+        "role": "required",
+        "authority": "required",
+        "evidence": "required",
+        "stop_condition": "required"
+      }
     }
   ],
   "playbooks": [

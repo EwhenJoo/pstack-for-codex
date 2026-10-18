@@ -3,20 +3,20 @@
   "source": {
     "repository": "https://github.com/cursor/plugins",
     "subdirectory": "pstack",
-    "commit": "1e5c90a4b6f249917bd21fe361b3a2a7deb741b8",
-    "version": "0.15.24",
-    "retrievedAt": "2026-10-14",
+    "commit": "0148b78c56c72a1b8412055913c79f767095b217",
+    "version": "0.15.27",
+    "retrievedAt": "2026-10-19",
     "license": "MIT",
     "licenseFile": "LICENSE"
   },
   "inventory": {
-    "fileCount": 169,
+    "fileCount": 171,
     "hashAlgorithm": "sha256"
   },
   "files": [
     {
       "path": ".cursor-plugin/plugin.json",
-      "sha256": "cb705d5264bd77d466967ef3a0ab5ea91eb546849edbd311f4b80c78deccd98f",
+      "sha256": "184b91c18687eded950cd926e438789a37db875b058914ebc49605eb4c674c76",
       "bytes": 722
     },
     {
@@ -101,53 +101,53 @@
     },
     {
       "path": "docs/guide/01-setup.md",
-      "sha256": "86d0330f245d16254a2069955f993c15d96cf29cd1a73690a0164074b7ac1190",
-      "bytes": 4313
+      "sha256": "aa98b876e635ce34803a8587cd66772de7cdf9e0f9217614a97b0462d6eafbfa",
+      "bytes": 4344
     },
     {
       "path": "docs/guide/02-poteto-mode.md",
-      "sha256": "979f61ca3d44cb8e68affda40327d32797e93fa9cc53ced7444c15e2600897e1",
-      "bytes": 7045
+      "sha256": "823262786c149affc1a037798ddd669855dd12c60938da40aed98d54a63cd026",
+      "bytes": 7056
     },
     {
       "path": "docs/guide/03-understand.md",
-      "sha256": "0090afa9b8670adf175466a2a973ff4349e95ed67d2aa8cebdfc55ff4b7382c9",
-      "bytes": 5197
+      "sha256": "1ac97cbad51c15c18b3aade8634d81c8bbe50d2b3135c75c113ddb2a6dcb7af0",
+      "bytes": 5141
     },
     {
       "path": "docs/guide/04-design.md",
-      "sha256": "31f2abe6e9b29feafd1a9eece8f4fe21992f86b8c19ab2e9b5c11a20f36587e7",
+      "sha256": "cff616278303b533e617c5c4408af6d28895edbb8687d6ce99bb5dd1f6644a6c",
       "bytes": 8759
     },
     {
       "path": "docs/guide/05-build-and-clean.md",
-      "sha256": "a93cc7771f7b35c7b54d0120b6f66e8367794ce6791237e889a30e7585c190fa",
-      "bytes": 5696
+      "sha256": "1284e80595ae4f214dfa7c5c5f7758ff90a47b3273aa7b8142e51e574f5c5290",
+      "bytes": 5707
     },
     {
       "path": "docs/guide/06-verify-and-ship.md",
-      "sha256": "3ef0eed5ea084dfbbaf1b1ae9e08d84f2c8a2b536ffb3ef5226710bf105f70e6",
-      "bytes": 9683
+      "sha256": "f9cb57c88e3c1732ed8e22dce8023d7425cbb69ea4e237ddd486cb88273d2b10",
+      "bytes": 9669
     },
     {
       "path": "docs/guide/07-overnight.md",
-      "sha256": "d7bd33a3d880768688dff4c1c2b5481ca9f0f194f5d97e44b65c9f96624d3ff0",
-      "bytes": 9139
+      "sha256": "03142cbeebd6f90211a5841d02faa90a0810d0993c9ffccf4045b463c472339c",
+      "bytes": 9198
     },
     {
       "path": "docs/guide/08-principles.md",
-      "sha256": "73c3db659d356d4aa6d7674d30d0db46fab2bdd60152fca717c2d1772a042bdc",
-      "bytes": 5916
+      "sha256": "0b26b85292f0c09768abe727c9e92987dbf81f5b439a4871034c2fd1c4cb1723",
+      "bytes": 5868
     },
     {
       "path": "docs/guide/09-make-it-yours.md",
-      "sha256": "157e0c20ad3c657857c2fbbea3afd26895b71b8f68475bc56f4c382dcdd0e118",
-      "bytes": 7632
+      "sha256": "003d2f5ed526dd9f95f8fd2ea78dc98a29ee68caa96569d2042a575ca971bdf7",
+      "bytes": 7616
     },
     {
       "path": "docs/guide/10-recipes-and-pitfalls.md",
-      "sha256": "c652474764b08da4a6364d85f5d03cf1fc1cf35e9d7c549348fb66e2d09f7b1f",
-      "bytes": 7419
+      "sha256": "63f33aef9f60dd62200ae1da16c4394ff618c8345d21f735ab54299f3336a682",
+      "bytes": 7451
     },
     {
       "path": "docs/guide/images/design.jpg",
@@ -185,19 +185,24 @@
       "bytes": 2608
     },
     {
+      "path": "docs/harness/claude-code.md",
+      "sha256": "c79e2283d3a83c6be3dd1cac33f9c074067c95e610ae6e0a16d9fdee84058927",
+      "bytes": 5678
+    },
+    {
       "path": "LICENSE",
       "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
       "bytes": 1067
     },
     {
       "path": "plugin.json",
-      "sha256": "5c73bc6047d206cf64d8bfcbeb1d8cf6b46b86b8f782cdf694b42301345d9828",
+      "sha256": "56878d2dc782978e1a8f64c84336fa7117214f7c525e862e73933539952ebc8f",
       "bytes": 619
     },
     {
       "path": "README.md",
-      "sha256": "193fa128aab7818b5244883befe6d79e69b4143e3a51a3d1e30efe99d31b40c3",
-      "bytes": 25431
+      "sha256": "4de92d6b1fdcc6f7c79913ab24a70a7bd0cabacbdd788112271398a47b907c97",
+      "bytes": 26479
     },
     {
       "path": "skills/architect/references/design-red-flags.md",
@@ -246,8 +251,13 @@
     },
     {
       "path": "skills/correct/SKILL.md",
-      "sha256": "bf482bacc972b3f124a4af8bf9364b4b3e280cb5845e44c326ea4f4565e5c904",
-      "bytes": 2445
+      "sha256": "e347045d00c967a0b831ef883cc6ac79d21329aa10b5968637df95de7febf0ba",
+      "bytes": 2478
+    },
+    {
+      "path": "skills/create-formal-verification-skill/SKILL.md",
+      "sha256": "5f5c08d6f5787ce18ffc9f018113e9cc6e7ddcc7878aa7ae94ef56978978497b",
+      "bytes": 4570
     },
     {
       "path": "skills/create-verification-skill/references/feature-map-example/create-note.md",
@@ -301,8 +311,8 @@
     },
     {
       "path": "skills/interrogate/references/lead-judgment.md",
-      "sha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
-      "bytes": 3465
+      "sha256": "355f5195a76bc75a655125292369f2a8231a2b61fabe5188d8f1386060922b87",
+      "bytes": 2283
     },
     {
       "path": "skills/interrogate/references/reviewer-prompt.md",
@@ -321,8 +331,8 @@
     },
     {
       "path": "skills/ketchup/SKILL.md",
-      "sha256": "d9704b154081af306b6583b2752498d454f9d761e9989ff1f037efd414f86bb4",
-      "bytes": 4858
+      "sha256": "f2923ffd14f6fc778f75a47aaed1f317fb5fd00b5701ca769d6446c74106dead",
+      "bytes": 6426
     },
     {
       "path": "skills/maintain-verification-skill/SKILL.md",
@@ -331,7 +341,7 @@
     },
     {
       "path": "skills/make-bot-ui/SKILL.md",
-      "sha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec",
+      "sha256": "ad19d0bc6764287ec08c2521701974e7dac941f72e4d0fe81a24f4614494586f",
       "bytes": 4649
     },
     {
@@ -351,8 +361,8 @@
     },
     {
       "path": "skills/poteto-help/SKILL.md",
-      "sha256": "1b0645c25200a19e5863583e117bad684b1b79ba8434823ebf4f6bbcc61e8a75",
-      "bytes": 13956
+      "sha256": "ef80c5480b4e9403635036282a9f90d9c3e79ca65e5fb74f96583f320c00c029",
+      "bytes": 14140
     },
     {
       "path": "skills/poteto-mode/playbooks/authoring-a-skill.md",
@@ -581,13 +591,13 @@
     },
     {
       "path": "skills/poteto-mode/SKILL.md",
-      "sha256": "f234661471847cafc4ae9bcb4a9208eb32ed8154ac25b91b2b064ec71bd62167",
-      "bytes": 20429
+      "sha256": "2755f102e7a6d0496b429d1031a22fb353e1f3d523543367caeaae5c4ed6f544",
+      "bytes": 20362
     },
     {
       "path": "skills/principle-attack-the-premise/SKILL.md",
-      "sha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
-      "bytes": 1941
+      "sha256": "6a932884daad4aa189e9b5d1665226bbc75621d4d2a398fd4003bebd382f4599",
+      "bytes": 1916
     },
     {
       "path": "skills/principle-boundary-discipline/SKILL.md",
@@ -621,8 +631,8 @@
     },
     {
       "path": "skills/principle-fix-root-causes/SKILL.md",
-      "sha256": "2131069d285d82fb799458494f2e4ac8759c9c6a60f9e300828c17874f514c6e",
-      "bytes": 1369
+      "sha256": "8df3c8c3fe57eb0055a5c8efab8ab144557fdf301da70b1cdc77a3a3ef3f3052",
+      "bytes": 1821
     },
     {
       "path": "skills/principle-foundational-thinking/SKILL.md",
@@ -641,13 +651,13 @@
     },
     {
       "path": "skills/principle-make-operations-idempotent/SKILL.md",
-      "sha256": "540738217c3da7bf513b9886924ad6a2bc77e58be867f5bd2e1831c74bf2ce70",
-      "bytes": 1390
+      "sha256": "7aa9327cf1f1aa057e95d47a0a78bd88a8f9d556b608866fee939d455a53a019",
+      "bytes": 1809
     },
     {
       "path": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
-      "sha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
-      "bytes": 1146
+      "sha256": "580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6",
+      "bytes": 637
     },
     {
       "path": "skills/principle-minimize-reader-load/SKILL.md",
@@ -696,13 +706,13 @@
     },
     {
       "path": "skills/principle-test-behavior-not-implementation/SKILL.md",
-      "sha256": "b2b73ba42920f9c3174ecdf808ec6e4591b3a9266ada9a05814f386004266d3a",
-      "bytes": 1386
+      "sha256": "f7223698623b6a26fea49c751e466b38e6691b1f32ce841d3983e7ffbe2b74a6",
+      "bytes": 2614
     },
     {
       "path": "skills/principle-type-system-discipline/SKILL.md",
-      "sha256": "2e492cef34bb25a20b9115df61f9ef3a9837e3fda144ffda8079e5f45a1b72e8",
-      "bytes": 3661
+      "sha256": "5cdaf79785e3c12b2592b9469ee8c272143eb86ab7a18d8382197cea5fd30106",
+      "bytes": 1557
     },
     {
       "path": "skills/recall/SKILL.md",
@@ -741,8 +751,8 @@
     },
     {
       "path": "skills/sharpen/SKILL.md",
-      "sha256": "6bcd73916696eb9c5b79b6f960983760c34bcc28937c11142dd8d86b5107aa46",
-      "bytes": 792
+      "sha256": "d895695fcc29b832bf118b842c1d7cf356a69622d63c9d49b40a0c97d8496c80",
+      "bytes": 756
     },
     {
       "path": "skills/show-me-your-work/references/decision-log-template.tsv",
@@ -761,8 +771,8 @@
     },
     {
       "path": "skills/swarm/SKILL.md",
-      "sha256": "c8fe1b28282e7a051a4041a146a11f076e0fd95252bb010106a58209805303d5",
-      "bytes": 3082
+      "sha256": "031657cb81e490f9aed5c75d6ff2a4fda35ccafbaf72be604e59481cc4080cdc",
+      "bytes": 2734
     },
     {
       "path": "skills/tdd/SKILL.md",
@@ -781,13 +791,13 @@
     },
     {
       "path": "skills/typescript-best-practices/references/patterns.md",
-      "sha256": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
-      "bytes": 9214
+      "sha256": "12e70c9419a8b3f5d6a1ab80e272c1f00a43ac0b3bbf72d68199033570e5de77",
+      "bytes": 9287
     },
     {
       "path": "skills/typescript-best-practices/SKILL.md",
-      "sha256": "28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e",
-      "bytes": 2684
+      "sha256": "ec1dac086d3708e5940d45d250c30a37dd953b4e3cb2ca0692f5851d7a039e27",
+      "bytes": 2765
     },
     {
       "path": "skills/unslop/SKILL.md",

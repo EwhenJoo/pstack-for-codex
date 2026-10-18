@@ -3,8 +3,8 @@
   "upstream": {
     "repository": "https://github.com/cursor/plugins",
     "subdirectory": "pstack",
-    "commit": "1e5c90a4b6f249917bd21fe361b3a2a7deb741b8",
-    "version": "0.15.24"
+    "commit": "0148b78c56c72a1b8412055913c79f767095b217",
+    "version": "0.15.27"
   },
   "classifications": [
     "preserved",
@@ -15,7 +15,7 @@
   "entries": [
     {
       "upstreamPath": ".cursor-plugin/plugin.json",
-      "upstreamSha256": "cb705d5264bd77d466967ef3a0ab5ea91eb546849edbd311f4b80c78deccd98f",
+      "upstreamSha256": "184b91c18687eded950cd926e438789a37db875b058914ebc49605eb4c674c76",
       "classification": "replaced",
       "derivedPath": ".codex-plugin/plugin.json",
       "preservedInvariants": [
@@ -28,9 +28,9 @@
         "installed-plugin"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "cb705d5264bd77d466967ef3a0ab5ea91eb546849edbd311f4b80c78deccd98f",
-        "disposition": "replaced-by-codex-manifest",
-        "rationale": "Keep the supported Codex manifest and namespace."
+        "upstreamSha256": "184b91c18687eded950cd926e438789a37db875b058914ebc49605eb4c674c76",
+        "disposition": "retain-codex-manifest",
+        "rationale": "Record official 0.15.27; use the distinct 0.5.0 Codex manifest. Omit host manifests and installation interfaces."
       }
     },
     {
@@ -56,12 +56,7 @@
       "validations": [
         "agent-template",
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "3e239e40b7b4b9beb2cf7f3ccc57f2388eb8b69bd1ba8ae888ef87ef6e0e2116",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "agents/poteto-agent.md",
@@ -74,12 +69,7 @@
       "validations": [
         "agent-template",
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "979f18abd000d185a0b4c41a2a4111c0910596a7f5c81cbb571885bc721b2bf7",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "assets/logo.png",
@@ -91,12 +81,7 @@
       ],
       "validations": [
         "upstream-hash"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "672f6791589ef758b0ced2c4c477913fa2758623c438e265639a0d539ce90695",
-        "disposition": "ported-codex-native",
-        "rationale": "New upstream surface was added in 0.15.1 and ported with Codex metadata and explicit-only boundaries."
-      }
+      ]
     },
     {
       "upstreamPath": "automations/benny/FOR_AGENTS.md",
@@ -244,7 +229,7 @@
     },
     {
       "upstreamPath": "docs/guide/01-setup.md",
-      "upstreamSha256": "86d0330f245d16254a2069955f993c15d96cf29cd1a73690a0164074b7ac1190",
+      "upstreamSha256": "aa98b876e635ce34803a8587cd66772de7cdf9e0f9217614a97b0462d6eafbfa",
       "classification": "adapted",
       "derivedPath": "docs/guide/01-setup.md",
       "preservedInvariants": [
@@ -254,14 +239,14 @@
         "documentation"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "86d0330f245d16254a2069955f993c15d96cf29cd1a73690a0164074b7ac1190",
-        "disposition": "ported-codex-native",
-        "rationale": "Clarify that custom profiles are optional and unverified roles inherit the parent model."
+        "upstreamSha256": "aa98b876e635ce34803a8587cd66772de7cdf9e0f9217614a97b0462d6eafbfa",
+        "disposition": "omit-host-link-change",
+        "rationale": "The changed anchor is a Cursor custom-mode feature. Keep Codex explicit invocation and trusted-hook instructions."
       }
     },
     {
       "upstreamPath": "docs/guide/02-poteto-mode.md",
-      "upstreamSha256": "979f61ca3d44cb8e68affda40327d32797e93fa9cc53ced7444c15e2600897e1",
+      "upstreamSha256": "823262786c149affc1a037798ddd669855dd12c60938da40aed98d54a63cd026",
       "classification": "adapted",
       "derivedPath": "docs/guide/02-poteto-mode.md",
       "preservedInvariants": [
@@ -271,14 +256,14 @@
         "documentation"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "979f61ca3d44cb8e68affda40327d32797e93fa9cc53ced7444c15e2600897e1",
-        "disposition": "ported-codex-native",
-        "rationale": "Port outcome, finish-check, evidence, constraint, scope, and short-follow-up prompt guidance with Codex activation rules."
+        "upstreamSha256": "823262786c149affc1a037798ddd669855dd12c60938da40aed98d54a63cd026",
+        "disposition": "port-route-clarification",
+        "rationale": "Clarify independent PR queue versus linear stack routing without changing lifecycle authority."
       }
     },
     {
       "upstreamPath": "docs/guide/03-understand.md",
-      "upstreamSha256": "0090afa9b8670adf175466a2a973ff4349e95ed67d2aa8cebdfc55ff4b7382c9",
+      "upstreamSha256": "1ac97cbad51c15c18b3aade8634d81c8bbe50d2b3135c75c113ddb2a6dcb7af0",
       "classification": "adapted",
       "derivedPath": "docs/guide/03-understand.md",
       "preservedInvariants": [
@@ -288,14 +273,14 @@
         "documentation"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "0090afa9b8670adf175466a2a973ff4349e95ed67d2aa8cebdfc55ff4b7382c9",
-        "disposition": "ported-codex-native",
-        "rationale": "Port read-only investigation and problem-restatement guidance with current-artifact verification."
+        "upstreamSha256": "1ac97cbad51c15c18b3aade8634d81c8bbe50d2b3135c75c113ddb2a6dcb7af0",
+        "disposition": "retain-codex-guide",
+        "rationale": "Metaphor and wording edits affect upstream prose absent from the concise Codex investigation guide."
       }
     },
     {
       "upstreamPath": "docs/guide/04-design.md",
-      "upstreamSha256": "31f2abe6e9b29feafd1a9eece8f4fe21992f86b8c19ab2e9b5c11a20f36587e7",
+      "upstreamSha256": "cff616278303b533e617c5c4408af6d28895edbb8687d6ce99bb5dd1f6644a6c",
       "classification": "adapted",
       "derivedPath": "docs/guide/04-design.md",
       "preservedInvariants": [
@@ -305,14 +290,14 @@
         "documentation"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "31f2abe6e9b29feafd1a9eece8f4fe21992f86b8c19ab2e9b5c11a20f36587e7",
-        "disposition": "ported-codex-native",
-        "rationale": "Port prototype-first and tutorial-first design guidance with Codex evidence and isolation rules."
+        "upstreamSha256": "cff616278303b533e617c5c4408af6d28895edbb8687d6ce99bb5dd1f6644a6c",
+        "disposition": "retain-codex-guide",
+        "rationale": "The punctuation edit affects upstream prose absent from the Codex design guide."
       }
     },
     {
       "upstreamPath": "docs/guide/05-build-and-clean.md",
-      "upstreamSha256": "a93cc7771f7b35c7b54d0120b6f66e8367794ce6791237e889a30e7585c190fa",
+      "upstreamSha256": "1284e80595ae4f214dfa7c5c5f7758ff90a47b3273aa7b8142e51e574f5c5290",
       "classification": "adapted",
       "derivedPath": "docs/guide/05-build-and-clean.md",
       "preservedInvariants": [
@@ -322,14 +307,14 @@
         "documentation"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "a93cc7771f7b35c7b54d0120b6f66e8367794ce6791237e889a30e7585c190fa",
-        "disposition": "ported-codex-native",
-        "rationale": "Port behavior-baseline, compatibility, and measured-performance guidance."
+        "upstreamSha256": "1284e80595ae4f214dfa7c5c5f7758ff90a47b3273aa7b8142e51e574f5c5290",
+        "disposition": "retain-codex-guide",
+        "rationale": "The conjunction and performance wording edits affect prose already replaced by measured-output instructions."
       }
     },
     {
       "upstreamPath": "docs/guide/06-verify-and-ship.md",
-      "upstreamSha256": "3ef0eed5ea084dfbbaf1b1ae9e08d84f2c8a2b536ffb3ef5226710bf105f70e6",
+      "upstreamSha256": "f9cb57c88e3c1732ed8e22dce8023d7425cbb69ea4e237ddd486cb88273d2b10",
       "classification": "adapted",
       "derivedPath": "docs/guide/06-verify-and-ship.md",
       "preservedInvariants": [
@@ -339,14 +324,14 @@
         "documentation"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "3ef0eed5ea084dfbbaf1b1ae9e08d84f2c8a2b536ffb3ef5226710bf105f70e6",
-        "disposition": "ported-codex-native",
-        "rationale": "Port claim-specific proof and current-head revalidation guidance without adding repository-write authority."
+        "upstreamSha256": "f9cb57c88e3c1732ed8e22dce8023d7425cbb69ea4e237ddd486cb88273d2b10",
+        "disposition": "retain-codex-guide",
+        "rationale": "Retain the concise proof and product-regression boundaries. Upstream wording edits target replaced prose; omit the unrequested daily scheduling recommendation. Add the new formal-verification route."
       }
     },
     {
       "upstreamPath": "docs/guide/07-overnight.md",
-      "upstreamSha256": "d7bd33a3d880768688dff4c1c2b5481ca9f0f194f5d97e44b65c9f96624d3ff0",
+      "upstreamSha256": "03142cbeebd6f90211a5841d02faa90a0810d0993c9ffccf4045b463c472339c",
       "classification": "adapted",
       "derivedPath": "docs/guide/07-overnight.md",
       "preservedInvariants": [
@@ -356,14 +341,14 @@
         "documentation"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "d7bd33a3d880768688dff4c1c2b5481ca9f0f194f5d97e44b65c9f96624d3ff0",
-        "disposition": "ported-codex-native",
-        "rationale": "Port unattended-run authority, stop-condition, and blocker guidance. Use supported Codex goals or heartbeats instead of Cursor loops."
+        "upstreamSha256": "03142cbeebd6f90211a5841d02faa90a0810d0993c9ffccf4045b463c472339c",
+        "disposition": "port-verification-cadence",
+        "rationale": "Adopt one fresh verifier for a later rebase or minor fix and a full swarm for new behavior or a large diff. Synchronize the autopilot-full playbook; preserve affected gates, live proof, current-patch verdict, and merge authority."
       }
     },
     {
       "upstreamPath": "docs/guide/08-principles.md",
-      "upstreamSha256": "73c3db659d356d4aa6d7674d30d0db46fab2bdd60152fca717c2d1772a042bdc",
+      "upstreamSha256": "0b26b85292f0c09768abe727c9e92987dbf81f5b439a4871034c2fd1c4cb1723",
       "classification": "adapted",
       "derivedPath": "docs/guide/08-principles.md",
       "preservedInvariants": [
@@ -373,14 +358,14 @@
         "documentation"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "73c3db659d356d4aa6d7674d30d0db46fab2bdd60152fca717c2d1772a042bdc",
-        "disposition": "retained-codex-native",
-        "rationale": "The upstream text change is Cursor command wording. Keep the complete Codex principle index and dollar-prefixed invocation syntax."
+        "upstreamSha256": "0b26b85292f0c09768abe727c9e92987dbf81f5b439a4871034c2fd1c4cb1723",
+        "disposition": "port-principle-summary",
+        "rationale": "Describe direct premise testing and observable behavior checks; keep the Codex principle index and normalized names. Omit redundant upstream prose edits."
       }
     },
     {
       "upstreamPath": "docs/guide/09-make-it-yours.md",
-      "upstreamSha256": "157e0c20ad3c657857c2fbbea3afd26895b71b8f68475bc56f4c382dcdd0e118",
+      "upstreamSha256": "003d2f5ed526dd9f95f8fd2ea78dc98a29ee68caa96569d2042a575ca971bdf7",
       "classification": "adapted",
       "derivedPath": "docs/guide/09-make-it-yours.md",
       "preservedInvariants": [
@@ -390,14 +375,14 @@
         "documentation"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "157e0c20ad3c657857c2fbbea3afd26895b71b8f68475bc56f4c382dcdd0e118",
-        "disposition": "ported-codex-native",
-        "rationale": "Port correction and benchmark guidance while retaining Codex skill-authoring and approval boundaries."
+        "upstreamSha256": "003d2f5ed526dd9f95f8fd2ea78dc98a29ee68caa96569d2042a575ca971bdf7",
+        "disposition": "retain-codex-guide",
+        "rationale": "Upstream wording edits target replaced prose. Keep supported Codex history, explicit edit authority, and project skill locations."
       }
     },
     {
       "upstreamPath": "docs/guide/10-recipes-and-pitfalls.md",
-      "upstreamSha256": "c652474764b08da4a6364d85f5d03cf1fc1cf35e9d7c549348fb66e2d09f7b1f",
+      "upstreamSha256": "63f33aef9f60dd62200ae1da16c4394ff618c8345d21f735ab54299f3336a682",
       "classification": "adapted",
       "derivedPath": "docs/guide/10-recipes-and-pitfalls.md",
       "preservedInvariants": [
@@ -407,9 +392,9 @@
         "documentation"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "c652474764b08da4a6364d85f5d03cf1fc1cf35e9d7c549348fb66e2d09f7b1f",
-        "disposition": "ported-codex-native",
-        "rationale": "Port new task recipes with dollar-prefixed skills and Codex authority boundaries."
+        "upstreamSha256": "63f33aef9f60dd62200ae1da16c4394ff618c8345d21f735ab54299f3336a682",
+        "disposition": "retain-codex-guide",
+        "rationale": "Upstream metaphor edits target replaced prose. Keep exclusive-path or worktree isolation rather than the cloud-agent recipe."
       }
     },
     {
@@ -494,11 +479,24 @@
       ],
       "validations": [
         "documentation"
+      ]
+    },
+    {
+      "upstreamPath": "docs/harness/claude-code.md",
+      "upstreamSha256": "c79e2283d3a83c6be3dd1cac33f9c074067c95e610ae6e0a16d9fdee84058927",
+      "classification": "provenance-only",
+      "derivedPath": null,
+      "preservedInvariants": [
+        "Host-specific source remains traceable without introducing unsupported runtime interfaces"
+      ],
+      "validations": [
+        "inventory",
+        "codex-runtime-references"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "49d92cfe91e01c04bd1150e5b000ee4fd4dfda8ce789b66a9dda98f7e5456e00",
-        "disposition": "ported-codex-native",
-        "rationale": "Add concise prompt anatomy and state that help is explicit-only."
+        "upstreamSha256": "c79e2283d3a83c6be3dd1cac33f9c074067c95e610ae6e0a16d9fdee84058927",
+        "disposition": "provenance-only",
+        "rationale": "Do not ship Claude tool names, model aliases, private transcript paths, installation instructions, or skip-and-continue rules. Codex keeps its central runtime contract and fails closed on correctness-critical missing capabilities."
       }
     },
     {
@@ -515,7 +513,7 @@
     },
     {
       "upstreamPath": "plugin.json",
-      "upstreamSha256": "5c73bc6047d206cf64d8bfcbeb1d8cf6b46b86b8f782cdf694b42301345d9828",
+      "upstreamSha256": "56878d2dc782978e1a8f64c84336fa7117214f7c525e862e73933539952ebc8f",
       "classification": "replaced",
       "derivedPath": ".codex-plugin/plugin.json",
       "preservedInvariants": [
@@ -526,14 +524,14 @@
         "installed-plugin"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "5c73bc6047d206cf64d8bfcbeb1d8cf6b46b86b8f782cdf694b42301345d9828",
-        "disposition": "replaced-by-codex-manifest",
-        "rationale": "Keep the supported Codex manifest and namespace."
+        "upstreamSha256": "56878d2dc782978e1a8f64c84336fa7117214f7c525e862e73933539952ebc8f",
+        "disposition": "retain-codex-manifest",
+        "rationale": "Record official 0.15.27; use the distinct 0.5.0 Codex manifest. Omit host manifests and installation interfaces."
       }
     },
     {
       "upstreamPath": "README.md",
-      "upstreamSha256": "193fa128aab7818b5244883befe6d79e69b4143e3a51a3d1e30efe99d31b40c3",
+      "upstreamSha256": "4de92d6b1fdcc6f7c79913ab24a70a7bd0cabacbdd788112271398a47b907c97",
       "classification": "adapted",
       "derivedPath": "README.md",
       "preservedInvariants": [
@@ -543,9 +541,9 @@
         "documentation"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "193fa128aab7818b5244883befe6d79e69b4143e3a51a3d1e30efe99d31b40c3",
-        "disposition": "retain-codex-host-contract",
-        "rationale": "Retain Codex installation, explicit-only discovery, and the existing dependency contract."
+        "upstreamSha256": "4de92d6b1fdcc6f7c79913ab24a70a7bd0cabacbdd788112271398a47b907c97",
+        "disposition": "port-content-retain-codex-guide",
+        "rationale": "Add formal-verification discovery and current content summary. Ketchup and principle descriptions live in their skills; cadence is synchronized in the Codex guide and playbook. Omit Cursor custom-mode links, Claude installation/generated-tree instructions, Cursor built-in autopilot names, fixed model defaults, and Cursor-only Benny claims; retain Codex hooks, model discovery, and dormant polling. Upstream editorial changes target prose already replaced in this guide."
       }
     },
     {
@@ -558,12 +556,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "d0e639e4cc588ec865f930d3a4111faad60987ae36925917e319d7ceca7c69ce",
-        "disposition": "ported-codex-native",
-        "rationale": "Port split state ownership, duplicate supported paths, importable internals, and hand-synced inventory flags."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/architect/references/rationale-template.md",
@@ -575,12 +568,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "0cedfccdc7b47fc881febd5a8293eecbc542c20f8df825639904a8102d2eb5d3",
-        "disposition": "reviewed-codex-overlay-retained",
-        "rationale": "Reviewed the upstream prose or policy change and retained the current Codex adaptation as the authoritative runtime contract."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/architect/references/runner-prompt.md",
@@ -592,12 +580,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "21dd5314aab778c5007228027a4591d97693fbec6ab86524037772b63f40948e",
-        "disposition": "ported-codex-native",
-        "rationale": "Port parallel-runner wording and qualify model identity as observable."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/architect/SKILL.md",
@@ -609,12 +592,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "31f8e97a52bfa5432edd61f68ade2a8632ef0bacbc2d2a6802d7a0e6821944ac",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/arena/SKILL.md",
@@ -626,12 +604,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "ed72f6c132b1ce3974d949581d0adc5dade424fe20793ac3b4c4fae22ecb9354",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/automate-me/SKILL.md",
@@ -643,12 +616,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "30b35f3628c4fd8c11af0ada06d14cdc3b28901810caca2480f627d4d21acfbe",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/benchmark-checklist/SKILL.md",
@@ -661,12 +629,7 @@
         "skill-behavior",
         "skill-surface"
       ],
-      "upstreamSha256": "ba109e96c8f6c1c391baccf19e5d11e14370df7b3f2605e1572cd565a6c0fca0",
-      "refreshDisposition": {
-        "upstreamSha256": "ba109e96c8f6c1c391baccf19e5d11e14370df7b3f2605e1572cd565a6c0fca0",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      "upstreamSha256": "ba109e96c8f6c1c391baccf19e5d11e14370df7b3f2605e1572cd565a6c0fca0"
     },
     {
       "upstreamPath": "skills/blast-radius/SKILL.md",
@@ -678,12 +641,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "2e10745b97f5862323dcda3b29ca60d56b5c3c98e37020085d26b48efbe0a436",
-        "disposition": "ported-codex-native",
-        "rationale": "Port the more-than-one-model wording and keep the observable-model requirement."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/bro/SKILL.md",
@@ -708,11 +666,28 @@
         "skill-behavior",
         "skill-surface"
       ],
-      "upstreamSha256": "bf482bacc972b3f124a4af8bf9364b4b3e280cb5845e44c326ea4f4565e5c904",
+      "upstreamSha256": "e347045d00c967a0b831ef883cc6ac79d21329aa10b5968637df95de7febf0ba",
       "refreshDisposition": {
-        "upstreamSha256": "bf482bacc972b3f124a4af8bf9364b4b3e280cb5845e44c326ea4f4565e5c904",
-        "disposition": "ported-codex-native",
-        "rationale": "Add recurrence classes after two examples, architecture/types/lint/tests/docs order, negative-control proof, and an enforcement table. Scope wider sweeps to explicit requests."
+        "upstreamSha256": "e347045d00c967a0b831ef883cc6ac79d21329aa10b5968637df95de7febf0ba",
+        "disposition": "port-test-guidance",
+        "rationale": "Adopt behavior-breaking versus internal-refactor checks; retain scoped recurrence audits and supported history access."
+      }
+    },
+    {
+      "upstreamPath": "skills/create-formal-verification-skill/SKILL.md",
+      "upstreamSha256": "5f5c08d6f5787ce18ffc9f018113e9cc6e7ddcc7878aa7ae94ef56978978497b",
+      "classification": "adapted",
+      "derivedPath": "skills/create-formal-verification-skill/SKILL.md",
+      "preservedInvariants": [
+        "the skill or supporting resource preserves its user-visible purpose"
+      ],
+      "validations": [
+        "skill-behavior"
+      ],
+      "refreshDisposition": {
+        "upstreamSha256": "5f5c08d6f5787ce18ffc9f018113e9cc6e7ddcc7878aa7ae94ef56978978497b",
+        "disposition": "port-with-codex-policy",
+        "rationale": "Add bounded formal verification and a broken-variant check. Convert explicit-only frontmatter into agents/openai.yaml allow_implicit_invocation: false under the 2026-10-19 user approval. Add Codex project paths, central authority, verifier-unavailable draft handling, and isolated scratch changes."
       }
     },
     {
@@ -761,12 +736,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "d353973547bf8ad8977eca645f4cd4feaed0d32f4b43d1448f906b0a76c4d694",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/figure-it-out/SKILL.md",
@@ -778,12 +748,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "bdb23cdbd82a1e6af094b495691c832a6f7f3ab9706ba9edbeb664ef51a726e1",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/how/references/explainer-prompt.md",
@@ -795,12 +760,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "ddb89cebefc24e2b54517a331aedfe045b6971e101f45c71b8cef4cccff45bff",
-        "disposition": "reviewed-codex-overlay-retained",
-        "rationale": "Reviewed the upstream prose or policy change and retained the current Codex adaptation as the authoritative runtime contract."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/how/references/explorer-prompt.md",
@@ -812,12 +772,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "6300128385ee940fd42ecb84b0e623435440a2dc283eae54ee4a52ba56947ba1",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/how/SKILL.md",
@@ -829,12 +784,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "08a00079bb15b4258874ac3ff62d4ca7e94350ffedb521d0fd296dc9dd21904e",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/in-your-own-words/SKILL.md",
@@ -846,12 +796,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "fa8ba74e27d7be371dc270ec78bbf816411477d0dfab185356c861ac8dd413ad",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/interrogate/references/code-quality-review.md",
@@ -863,16 +808,11 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8",
-        "disposition": "ported-codex-native",
-        "rationale": "Port upstream concise reviewer wording and remove redundant self-audit prose while retaining the Codex role, authority, artifact evidence, and unsupported-capability guards."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/interrogate/references/lead-judgment.md",
-      "upstreamSha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
+      "upstreamSha256": "355f5195a76bc75a655125292369f2a8231a2b61fabe5188d8f1386060922b87",
       "classification": "adapted",
       "derivedPath": "skills/interrogate/references/lead-judgment.md",
       "preservedInvariants": [
@@ -882,9 +822,9 @@
         "skill-behavior"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
-        "disposition": "reviewed-codex-overlay-retained",
-        "rationale": "Reviewed the upstream prose or policy change and retained the current Codex adaptation as the authoritative runtime contract."
+        "upstreamSha256": "355f5195a76bc75a655125292369f2a8231a2b61fabe5188d8f1386060922b87",
+        "disposition": "port-upstream-deletions",
+        "rationale": "Remove redundant lead preamble and verdict-size cap while retaining actionable filtering and scrutiny of security and correctness findings."
       }
     },
     {
@@ -897,12 +837,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "f6005cc2b535006fca97a96c5bfda49df57312eedf1ffd8d1aaaf3eb33817c25",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/interrogate/references/rubric.md",
@@ -914,12 +849,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "0f9c6bdb0b96e26dbde5f6407f417e0c02f54080e7a1268d8994f3c3ec6c5ac0",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/interrogate/SKILL.md",
@@ -931,16 +861,11 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "a16dfe179005abc22a4651b82f25b0c8ab953284276efe4e6dc341958fb63647",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/ketchup/SKILL.md",
-      "upstreamSha256": "d9704b154081af306b6583b2752498d454f9d761e9989ff1f037efd414f86bb4",
+      "upstreamSha256": "f2923ffd14f6fc778f75a47aaed1f317fb5fd00b5701ca769d6446c74106dead",
       "classification": "adapted",
       "derivedPath": "skills/ketchup/SKILL.md",
       "preservedInvariants": [
@@ -950,9 +875,9 @@
         "skill-behavior"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "d9704b154081af306b6583b2752498d454f9d761e9989ff1f037efd414f86bb4",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+        "upstreamSha256": "f2923ffd14f6fc778f75a47aaed1f317fb5fd00b5701ca769d6446c74106dead",
+        "disposition": "port-with-codex-invocation",
+        "rationale": "Adopt complete per-item decisions, evidence and risk, flexible length, and meaningful inline visuals. Keep read-only behavior, dollar invocation, and available visualization tools rather than a host-specific command."
       }
     },
     {
@@ -969,7 +894,7 @@
     },
     {
       "upstreamPath": "skills/make-bot-ui/SKILL.md",
-      "upstreamSha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec",
+      "upstreamSha256": "ad19d0bc6764287ec08c2521701974e7dac941f72e4d0fe81a24f4614494586f",
       "classification": "adapted",
       "derivedPath": "skills/make-bot-ui/SKILL.md",
       "preservedInvariants": [
@@ -979,9 +904,9 @@
         "skill-behavior"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec",
-        "disposition": "ported-codex-native",
-        "rationale": "New upstream surface was added in 0.15.1 and ported with Codex metadata and explicit-only boundaries."
+        "upstreamSha256": "ad19d0bc6764287ec08c2521701974e7dac941f72e4d0fe81a24f4614494586f",
+        "disposition": "already-adapted",
+        "rationale": "The lowercase skill name already matches the upstream correction; no runtime or permission change is needed."
       }
     },
     {
@@ -994,12 +919,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "078ecfe224eafbb017f6476870612838bf6dbe38c0b697e12f0c887d0313f17e",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-help/references/prompting.md",
@@ -1011,12 +931,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "463f450c44a60afd001a2f69fdf8a5dea174351f339369b12ec3c41515e564d3",
-        "disposition": "ported-codex-native",
-        "rationale": "Add prompt anatomy, context, design, follow-up, unattended-work, and steering guidance with Codex syntax and authority rules."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-help/references/recipes.md",
@@ -1028,12 +943,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "5fb97a805976a82db0aba5cc8943e88d0cb38b17a0d6b8e89a44633677febb1a",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-help/SKILL.md",
@@ -1046,11 +956,11 @@
         "skill-behavior",
         "skill-surface"
       ],
-      "upstreamSha256": "1b0645c25200a19e5863583e117bad684b1b79ba8434823ebf4f6bbcc61e8a75",
+      "upstreamSha256": "ef80c5480b4e9403635036282a9f90d9c3e79ca65e5fb74f96583f320c00c029",
       "refreshDisposition": {
-        "upstreamSha256": "1b0645c25200a19e5863583e117bad684b1b79ba8434823ebf4f6bbcc61e8a75",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+        "upstreamSha256": "ef80c5480b4e9403635036282a9f90d9c3e79ca65e5fb74f96583f320c00c029",
+        "disposition": "port-routing",
+        "rationale": "Add complete-decision ketchup and formal-verification routes while keeping explicit-only help that does not start work."
       }
     },
     {
@@ -1063,12 +973,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "f6a13a445c360b48d6cd72780ac01955f45b82826476efe0e67c7559329407aa",
-        "disposition": "retained-codex-safety-overlay",
-        "rationale": "The Codex safety, authority, lifecycle, or capability overlay remains authoritative over host-specific upstream mechanics."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/autonomous-run.md",
@@ -1080,12 +985,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "6ac974fd2b09748add56493e89f578a35a6a9289e1026515878d81ef3cf129d1",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/autopilot-full.md",
@@ -1097,12 +997,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "acf4f4a58c11045f9d3e8807d907a877e61ca6432b079f1087d7d30fc931566f",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/autopilot-stack.md",
@@ -1114,12 +1009,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "c6bcb18b2ce605e77a2a2225854590a4b9a687911f79331746d91a4fe9a52e60",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/babysit.md",
@@ -1131,12 +1021,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "e261c1ff5581e0f8fc6c686f34de4b535f87473e77beabea7dd8323021214610",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/bug-fix.md",
@@ -1148,12 +1033,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "66e26542dad131cfd7df80ac0cdf81ed4d85e7b5e3f0eb65b933888760c4831f",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/eval.md",
@@ -1165,12 +1045,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "a93d449a908236afa6645179651844094b1547dbab4e484cffcdda630e4b90bf",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/feature.md",
@@ -1182,12 +1057,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "af8ce700b99953741cb547e34308fde0cf6b98ce67e1652c800d0deedf53aba1",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/hillclimb.md",
@@ -1199,12 +1069,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "942c1565b75ad02a2cb6230dd7c1ebd87e19f59a00319ebac2b6616007bf018f",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/investigation.md",
@@ -1216,12 +1081,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "dc66bcf6af3a074fc7f67aa5e12b93ef571a4fb4d8e17f2f1af5ae5359f42e46",
-        "disposition": "retained-codex-safety-overlay",
-        "rationale": "The Codex safety, authority, lifecycle, or capability overlay remains authoritative over host-specific upstream mechanics."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/multi-phase-plan.md",
@@ -1233,12 +1093,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "5f239457bfdec3345c92caa06c59bf0257c662b89353f25a1c02ea942dcd00b1",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/opening-a-pr.md",
@@ -1250,12 +1105,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "a5aef646de8b651306c2d10974623650e4a013a245aec1c00525bbe0e31bfa76",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/orchestrate.md",
@@ -1267,12 +1117,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "08dce6c9e7be1d13bc6944ab9b51665f935c531437f5e088bc53d2a62099ef05",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/pause-safely.md",
@@ -1284,12 +1129,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "77968cfe5f4a71a8cd33e0ae8ffcdbd88dd693a212c240457773e6c40c96c21d",
-        "disposition": "ported-codex-native",
-        "rationale": "Port concise pause wording while preserving Codex supported lifecycle and resume receipts."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/perf-issue.md",
@@ -1301,12 +1141,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "c12aa2f82de7651a11676a3d5fea168f539b7f0faaa3a501d279255dd2a469c8",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/prototype.md",
@@ -1318,12 +1153,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "7aa1f52c691c3d46d5afc527b23f90977fce869ce33573c73c81a4c7f0cde962",
-        "disposition": "retained-codex-safety-overlay",
-        "rationale": "The Codex safety, authority, lifecycle, or capability overlay remains authoritative over host-specific upstream mechanics."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/refactoring.md",
@@ -1335,12 +1165,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "0f5dd38113379ea8cf61e2182eca0a7478eea9a869eb40c2dddab3335aeca197",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/runtime-forensics.md",
@@ -1352,12 +1177,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "3463372b578c28f27c236f2627f09b5c5b1e85e86db7399fb984f3892fb450f5",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/session-pickup.md",
@@ -1369,12 +1189,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "d194f2a7ef392c1598ef3f0e3b561370ca25c2c7a78308007af4aa46ada8ee12",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/shipping.md",
@@ -1386,12 +1201,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "bf56339bdf7e0223bcff5abf4e8599e3f5b547b3fcc3b4ce9475e6e7dda14a9f",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/trace-forensics.md",
@@ -1403,12 +1213,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "ef0bbf79856a4ae1a8993d54c1a1da159cb97623941b652c0069cf75a017e0f5",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/visual-parity.md",
@@ -1420,12 +1225,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "950ca51999a6454c98eee6bcbc3d1bbe501a4e3a5d5439b6f6ddc378991b256c",
-        "disposition": "retained-codex-safety-overlay",
-        "rationale": "The Codex safety, authority, lifecycle, or capability overlay remains authoritative over host-specific upstream mechanics."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/playbooks/worktree-cleanup.md",
@@ -1437,12 +1237,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "be04ae0afe19d4a4da5bcc4e94455f68dbebd1cda6eb0f456ca0d358ecf76c00",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/references/bugbot-triage.md",
@@ -1454,12 +1249,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "b2d146c770d8d3593e1ef3d77b668039b8e1f78093ea1a86f1d45d7f99614309",
-        "disposition": "retained-codex-safety-overlay",
-        "rationale": "The Codex safety, authority, lifecycle, or capability overlay remains authoritative over host-specific upstream mechanics."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/scripts/bootstrap.ts",
@@ -1495,12 +1285,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "e58c3d871b09d477be00628d69dd23ffa6c2e3a1728f5b867a841baa8e90278b",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/scripts/check-plan.test.ts",
@@ -1512,12 +1297,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "c80f3ea043b81f219b92c4c8a3af6bdd4f8d32ea596ec15b5b9e0252645f2ae8",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/scripts/orch/orch.test.ts",
@@ -1529,12 +1309,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "5e80b416bdcd68e4067690ce857345852fd2e0db3dcf3e25607999cd55b963d2",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/scripts/orch/orch.ts",
@@ -1546,12 +1321,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "47c92c57e8276616d8de94665a126bd832e748036afa8d0ffdbacb7946decb5c",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/scripts/orch/store.ts",
@@ -1563,12 +1333,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "558cfda533e1ebe7c8d7842604f07e0be7618759cf129b4c2397a8e29516ecea",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/scripts/package.json",
@@ -1580,12 +1345,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "fd511a0c01f522e0c781ddd8eccea0e91697a0856c6e6a3261de78a6a0287c72",
-        "disposition": "retain-codex-host-contract",
-        "rationale": "Retain Codex installation, explicit-only discovery, and the existing dependency contract."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/scripts/watch-pr/cli.test.ts",
@@ -1621,12 +1381,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "cf0c5ee61b4a73444c1b775cfb6c81a40d312e055dd21a1f5eae6276e54de13f",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/scripts/watch-pr/github.test.ts",
@@ -1638,12 +1393,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "70c9f03d8738228763846f2abdd8c7de7be68dba3035041482386a69cbf5639b",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/scripts/watch-pr/github.ts",
@@ -1655,12 +1405,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "a605b8531468dbe4c07b93663c0993a9c11dc7e9179adde970f5c740396451d9",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
@@ -1672,12 +1417,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "146acabcfee9b6fa3342358eb0a9504aa65fd081bbc15b10adf9c1c5485067d2",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/scripts/watch-pr/policy.ts",
@@ -1689,12 +1429,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "f2a3e31223d05edc05e5473cc3f8f3cb9bd20c202c30c6abe7f21f0f7aee8fbb",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/scripts/watch-pr/render.ts",
@@ -1742,12 +1477,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "0cac435294dc85ce1ba755e8e67f6c5ab163dfa252f2722d6e3a2d68c58fec59",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/scripts/watch-pr/watch-pr",
@@ -1771,16 +1501,11 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "e0a94e5e5b1ff60638916e440600e15851f7b79bc1a1d1f602fde05d465e2ec0",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/poteto-mode/SKILL.md",
-      "upstreamSha256": "f234661471847cafc4ae9bcb4a9208eb32ed8154ac25b91b2b064ec71bd62167",
+      "upstreamSha256": "2755f102e7a6d0496b429d1031a22fb353e1f3d523543367caeaae5c4ed6f544",
       "classification": "adapted",
       "derivedPath": "skills/poteto-mode/SKILL.md",
       "preservedInvariants": [
@@ -1790,14 +1515,14 @@
         "skill-behavior"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "f234661471847cafc4ae9bcb4a9208eb32ed8154ac25b91b2b064ec71bd62167",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+        "upstreamSha256": "2755f102e7a6d0496b429d1031a22fb353e1f3d523543367caeaae5c4ed6f544",
+        "disposition": "port-principle-index",
+        "rationale": "Adopt premise, root-cause, and observable-behavior summaries. The lowercase name was already adapted; keep Codex session activation and authority rules."
       }
     },
     {
       "upstreamPath": "skills/principle-attack-the-premise/SKILL.md",
-      "upstreamSha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
+      "upstreamSha256": "6a932884daad4aa189e9b5d1665226bbc75621d4d2a398fd4003bebd382f4599",
       "classification": "adapted",
       "derivedPath": "skills/principle-attack-the-premise/SKILL.md",
       "preservedInvariants": [
@@ -1807,9 +1532,9 @@
         "skill-behavior"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
-        "disposition": "ported-codex-native",
-        "rationale": "New upstream surface was added in 0.15.1 and ported with Codex metadata and explicit-only boundaries."
+        "upstreamSha256": "6a932884daad4aa189e9b5d1665226bbc75621d4d2a398fd4003bebd382f4599",
+        "disposition": "port-reviewed-content",
+        "rationale": "Replace the actor-census prescription with a rerunnable direct test of the shared premise."
       }
     },
     {
@@ -1822,12 +1547,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "62ac2862c2caa22dd14531f51c9c6bb445ceb198ca98a687e25b4d47c1f10a28",
-        "disposition": "reviewed-codex-overlay-retained",
-        "rationale": "Reviewed the upstream prose or policy change and retained the current Codex adaptation as the authoritative runtime contract."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-build-the-lever/SKILL.md",
@@ -1839,12 +1559,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "3434b0ad0c640c6f1d7960be7a8986c3bcdc14e26060360dec29903df60074ff",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-encode-lessons-in-structure/SKILL.md",
@@ -1856,12 +1571,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "228963799189f481827d6f28065f278bc2008ffa37030b1234cbd5814d36b9e9",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-exhaust-the-design-space/SKILL.md",
@@ -1873,12 +1583,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "2de83d99f93f60ec6313455b0bc9aa9f0bfb93dd59f414f403691322db00d4db",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-experience-first/SKILL.md",
@@ -1890,12 +1595,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "58903529d733b1c1a7c9ccf127d45ef3c7d0d9f0b81164a4dc6b80efe6f2912b",
-        "disposition": "reviewed-codex-overlay-retained",
-        "rationale": "Reviewed the upstream prose or policy change and retained the current Codex adaptation as the authoritative runtime contract."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-explain-the-number/SKILL.md",
@@ -1908,16 +1608,11 @@
         "skill-behavior",
         "skill-surface"
       ],
-      "upstreamSha256": "cd5a25f9e7cf023627ccb470dc5faa97542f29b4319496a32b839a8e1e988047",
-      "refreshDisposition": {
-        "upstreamSha256": "cd5a25f9e7cf023627ccb470dc5faa97542f29b4319496a32b839a8e1e988047",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      "upstreamSha256": "cd5a25f9e7cf023627ccb470dc5faa97542f29b4319496a32b839a8e1e988047"
     },
     {
       "upstreamPath": "skills/principle-fix-root-causes/SKILL.md",
-      "upstreamSha256": "2131069d285d82fb799458494f2e4ac8759c9c6a60f9e300828c17874f514c6e",
+      "upstreamSha256": "8df3c8c3fe57eb0055a5c8efab8ab144557fdf301da70b1cdc77a3a3ef3f3052",
       "classification": "adapted",
       "derivedPath": "skills/principle-fix-root-causes/SKILL.md",
       "preservedInvariants": [
@@ -1927,9 +1622,9 @@
         "skill-behavior"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "2131069d285d82fb799458494f2e4ac8759c9c6a60f9e300828c17874f514c6e",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+        "upstreamSha256": "8df3c8c3fe57eb0055a5c8efab8ab144557fdf301da70b1cdc77a3a3ef3f3052",
+        "disposition": "port-reviewed-content",
+        "rationale": "Distinguish legitimate states requiring handling from invalid states whose producer must be fixed; retain reproduction and persisted-state diagnosis."
       }
     },
     {
@@ -1942,12 +1637,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
-        "disposition": "reviewed-codex-overlay-retained",
-        "rationale": "Reviewed the upstream prose or policy change and retained the current Codex adaptation as the authoritative runtime contract."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-guard-the-context-window/SKILL.md",
@@ -1959,12 +1649,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "af0b9dd70b43628ce4a59a4d332e9d9ad055084e460f430e7a757495c627e81a",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-laziness-protocol/SKILL.md",
@@ -1976,16 +1661,11 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "1be6e7a435f26a75a76eb848b9c3d611b9977d0f5822361753244da25ca3ca45",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-make-operations-idempotent/SKILL.md",
-      "upstreamSha256": "540738217c3da7bf513b9886924ad6a2bc77e58be867f5bd2e1831c74bf2ce70",
+      "upstreamSha256": "7aa9327cf1f1aa057e95d47a0a78bd88a8f9d556b608866fee939d455a53a019",
       "classification": "adapted",
       "derivedPath": "skills/principle-make-operations-idempotent/SKILL.md",
       "preservedInvariants": [
@@ -1993,11 +1673,16 @@
       ],
       "validations": [
         "skill-behavior"
-      ]
+      ],
+      "refreshDisposition": {
+        "upstreamSha256": "7aa9327cf1f1aa057e95d47a0a78bd88a8f9d556b608866fee939d455a53a019",
+        "disposition": "port-reviewed-content",
+        "rationale": "Derive each step from observed state and require evidence of staleness instead of a universal PID-lock recipe."
+      }
     },
     {
       "upstreamPath": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
-      "upstreamSha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
+      "upstreamSha256": "580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6",
       "classification": "adapted",
       "derivedPath": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
       "preservedInvariants": [
@@ -2007,9 +1692,9 @@
         "skill-behavior"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
-        "disposition": "reviewed-codex-overlay-retained",
-        "rationale": "Reviewed the upstream prose or policy change and retained the current Codex adaptation as the authoritative runtime contract."
+        "upstreamSha256": "580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6",
+        "disposition": "port-reviewed-content",
+        "rationale": "Adopt removal of redundant migration prose and keep the conditions for coordinated internal API changes; preserve the normalized Codex name."
       }
     },
     {
@@ -2022,12 +1707,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "1ea2b7fef2391cae5844c4efdbd59031f775e8a52d06b7495d707229a200dcca",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-model-the-domain/SKILL.md",
@@ -2039,12 +1719,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "52c0d85e0c3827c41c18299b642657d7b47eaf77b7b31609e42e0df42b84c75f",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-never-block-on-the-human/SKILL.md",
@@ -2056,12 +1731,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "05030a7a083c337676f793881b4e93cd218e8f1dd676529f56e6ac1d3efb8d1f",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-outcome-oriented-execution/SKILL.md",
@@ -2073,12 +1743,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
-        "disposition": "ported-codex-native",
-        "rationale": "Port concise principle wording and remove redundant self-audit repetitions. The shared Codex runtime retains independent artifact verification and authority boundaries."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-prove-it-works/SKILL.md",
@@ -2090,12 +1755,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "ec79a15025bac8d33d62011c54f3b612733fd2a024e623b531b3637aa75070e2",
-        "disposition": "ported-codex-native",
-        "rationale": "Port concise principle wording and remove redundant self-audit repetitions. The shared Codex runtime retains independent artifact verification and authority boundaries."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-redesign-from-first-principles/SKILL.md",
@@ -2107,12 +1767,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "170e0a658783e43fee8ec5a8c2422a4abb8f69cef621dd1819a95910b8207034",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-separate-before-serializing-shared-state/SKILL.md",
@@ -2124,12 +1779,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "05294b40448e927c5da1c7b6f5c6b9fed3744637e3833d2d948b9154a9dd00bb",
-        "disposition": "reviewed-codex-overlay-retained",
-        "rationale": "Reviewed the upstream prose or policy change and retained the current Codex adaptation as the authoritative runtime contract."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-sequence-verifiable-units/SKILL.md",
@@ -2141,12 +1791,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "2ccbbacc56ace5afdfb8670cef19d7bd009fb2a0033b9a741cbdf2b6baf72187",
-        "disposition": "ported-codex-native",
-        "rationale": "Port concise principle wording and remove redundant self-audit repetitions. The shared Codex runtime retains independent artifact verification and authority boundaries."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-subtract-before-you-add/SKILL.md",
@@ -2158,16 +1803,11 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "8c93bb9d1a7f38e2ef37655d93f0e790fa59903105af3d500cc8a663ebe45f3f",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/principle-test-behavior-not-implementation/SKILL.md",
-      "upstreamSha256": "b2b73ba42920f9c3174ecdf808ec6e4591b3a9266ada9a05814f386004266d3a",
+      "upstreamSha256": "f7223698623b6a26fea49c751e466b38e6691b1f32ce841d3983e7ffbe2b74a6",
       "classification": "adapted",
       "derivedPath": "skills/principle-test-behavior-not-implementation/SKILL.md",
       "preservedInvariants": [
@@ -2177,14 +1817,14 @@
         "skill-behavior"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "b2b73ba42920f9c3174ecdf808ec6e4591b3a9266ada9a05814f386004266d3a",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+        "upstreamSha256": "f7223698623b6a26fea49c751e466b38e6691b1f32ce841d3983e7ffbe2b74a6",
+        "disposition": "port-reviewed-content",
+        "rationale": "Replace assertion-shape bans with observable-contract checks that fail for broken behavior and survive internal refactoring."
       }
     },
     {
       "upstreamPath": "skills/principle-type-system-discipline/SKILL.md",
-      "upstreamSha256": "2e492cef34bb25a20b9115df61f9ef3a9837e3fda144ffda8079e5f45a1b72e8",
+      "upstreamSha256": "5cdaf79785e3c12b2592b9469ee8c272143eb86ab7a18d8382197cea5fd30106",
       "classification": "adapted",
       "derivedPath": "skills/principle-type-system-discipline/SKILL.md",
       "preservedInvariants": [
@@ -2194,9 +1834,9 @@
         "skill-behavior"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "2e492cef34bb25a20b9115df61f9ef3a9837e3fda144ffda8079e5f45a1b72e8",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+        "upstreamSha256": "5cdaf79785e3c12b2592b9469ee8c272143eb86ab7a18d8382197cea5fd30106",
+        "disposition": "port-reviewed-content",
+        "rationale": "Adopt concise type guidance and upstream deletions; retain boundary parsing, branding, and authoritative schemas. Detailed constructions and exhaustiveness remain in TypeScript guidance."
       }
     },
     {
@@ -2209,12 +1849,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "b0ceb996259c3404532f61e4b010df4e3d80d7ddbed85b3c302895723eb62a89",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/reflect/references/divergent-reviewer.md",
@@ -2226,12 +1861,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "f6030d88e20e906ef5e2d9ba44cb013ce610c49c2fe2ef74c377d32e0dc9e939",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/reflect/references/judgment-reviewer.md",
@@ -2243,12 +1873,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "38f917619fbf346062d643e0ad6b12fc952d58678dfcbbf42ffcf6d8b9c08307",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/reflect/references/synthesizer.md",
@@ -2260,12 +1885,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "6af816963de74d1a1aef4070273c1ff533d2072732e488e159ddc0b299fec3cd",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/reflect/references/tooling-reviewer.md",
@@ -2277,12 +1897,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "f81b8697e7366fbbc18feba52c6e3253a101f751091364ebc4396a1d9b5753b4",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/reflect/SKILL.md",
@@ -2294,12 +1909,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "1f5a8c246cdee8251f8667d85bd5d97f6c2801f505843c26ddbd6c621632519b",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/setup-pstack/SKILL.md",
@@ -2311,16 +1921,11 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "d61b47256a18155a81c8e5ef95e3cc6569ce8c18317c35c4dd9c8015cf68cb59",
-        "disposition": "retained-validated-codex-model-policy",
-        "rationale": "Keep exact Codex model and reasoning-effort validation, inheritance, ownership receipts, and user-selected budgets. Cursor rule files and defaults do not apply."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/sharpen/SKILL.md",
-      "upstreamSha256": "6bcd73916696eb9c5b79b6f960983760c34bcc28937c11142dd8d86b5107aa46",
+      "upstreamSha256": "d895695fcc29b832bf118b842c1d7cf356a69622d63c9d49b40a0c97d8496c80",
       "classification": "adapted",
       "derivedPath": "skills/sharpen/SKILL.md",
       "preservedInvariants": [
@@ -2330,9 +1935,9 @@
         "skill-behavior"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "6bcd73916696eb9c5b79b6f960983760c34bcc28937c11142dd8d86b5107aa46",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+        "upstreamSha256": "d895695fcc29b832bf118b842c1d7cf356a69622d63c9d49b40a0c97d8496c80",
+        "disposition": "port-reviewed-content",
+        "rationale": "Remove the rewritten-prompt ban as upstream does; retain the task-framing workflow."
       }
     },
     {
@@ -2357,12 +1962,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "a65a4bc5fb7cdeadbdb7b7ff1ca4682f4d9c42420942b2977cd17b46c4ac338e",
-        "disposition": "ported-codex-native",
-        "rationale": "Port nonempty-file detection and append-only header creation so a failed existence check cannot truncate prior rows."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/show-me-your-work/SKILL.md",
@@ -2374,16 +1974,11 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "920a8217cbb62f92a2222fb81fc9eab17ecd554a0277e444a95a927195139bd1",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/swarm/SKILL.md",
-      "upstreamSha256": "c8fe1b28282e7a051a4041a146a11f076e0fd95252bb010106a58209805303d5",
+      "upstreamSha256": "031657cb81e490f9aed5c75d6ff2a4fda35ccafbaf72be604e59481cc4080cdc",
       "classification": "adapted",
       "derivedPath": "skills/swarm/SKILL.md",
       "preservedInvariants": [
@@ -2393,9 +1988,9 @@
         "skill-behavior"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "c8fe1b28282e7a051a4041a146a11f076e0fd95252bb010106a58209805303d5",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+        "upstreamSha256": "031657cb81e490f9aed5c75d6ff2a4fda35ccafbaf72be604e59481cc4080cdc",
+        "disposition": "port-deletions-retain-runtime-bounds",
+        "rationale": "Remove redundant introduction and aggregation summary. Intentionally retain local worker-count, observable capacity, queueing, isolation, and fallback requirements; deleting them would lose the Codex shared-filesystem contract."
       }
     },
     {
@@ -2408,12 +2003,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "eeb868e2dfebee528d730a67d7b17498fac4bb85dec2e38bc5c5176aca4d5d2f",
-        "disposition": "ported-codex-native",
-        "rationale": "Port concise executable-repro guidance and preserve meaningful regressions and runtime proof."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/teach/SKILL.md",
@@ -2425,12 +2015,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
-        "disposition": "reviewed-codex-overlay-retained",
-        "rationale": "Reviewed the upstream prose or policy change and retained the current Codex adaptation as the authoritative runtime contract."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/technical-writing/SKILL.md",
@@ -2442,16 +2027,11 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "61fe9c424a798ebf36ad94941f87be049cb8827bdf86d21474a0dde37b513c43",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/typescript-best-practices/references/patterns.md",
-      "upstreamSha256": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
+      "upstreamSha256": "12e70c9419a8b3f5d6a1ab80e272c1f00a43ac0b3bbf72d68199033570e5de77",
       "classification": "adapted",
       "derivedPath": "skills/typescript-best-practices/references/patterns.md",
       "preservedInvariants": [
@@ -2461,14 +2041,14 @@
         "skill-behavior"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
-        "disposition": "ported-codex-native",
-        "rationale": "Port schema parsing and inferred boundary types; typed validator assignment rejects incomplete shape instead of trusting handwritten predicates."
+        "upstreamSha256": "12e70c9419a8b3f5d6a1ab80e272c1f00a43ac0b3bbf72d68199033570e5de77",
+        "disposition": "port-brand-example",
+        "rationale": "Replace the AgentId cast with an isAgentId guard backed by isUUID; preserve other local boundary-schema examples."
       }
     },
     {
       "upstreamPath": "skills/typescript-best-practices/SKILL.md",
-      "upstreamSha256": "28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e",
+      "upstreamSha256": "ec1dac086d3708e5940d45d250c30a37dd953b4e3cb2ca0692f5851d7a039e27",
       "classification": "adapted",
       "derivedPath": "skills/typescript-best-practices/SKILL.md",
       "preservedInvariants": [
@@ -2478,9 +2058,9 @@
         "skill-behavior"
       ],
       "refreshDisposition": {
-        "upstreamSha256": "28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e",
-        "disposition": "reviewed-codex-overlay-retained",
-        "rationale": "Reviewed the upstream prose or policy change and retained the current Codex adaptation as the authoritative runtime contract."
+        "upstreamSha256": "ec1dac086d3708e5940d45d250c30a37dd953b4e3cb2ca0692f5851d7a039e27",
+        "disposition": "port-reviewed-content",
+        "rationale": "Adopt validated brand type guards instead of casts; keep Codex frontmatter and existing schema-validation guidance."
       }
     },
     {
@@ -2493,12 +2073,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "ccab208e315ce05e2fab8eeee2f7879f1289b5c6844840b2d307adf31c79144f",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/why/references/epistemics.md",
@@ -2510,12 +2085,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "d54a2361b2d5973bc3fe2edf62f446d87935974d4b40d47f23b9529f956ca758",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/why/references/investigator-prompt.md",
@@ -2527,12 +2097,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "c44afba186f899094f3694e6c9d6de5d14ff7c4ce28b787a9f50fc789c9a7fc3",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/why/references/source-playbook.md",
@@ -2544,12 +2109,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "9ae9dcb9d09111c9facc68510331c5aba4aed9b1b057314ff1fc0e166ad3993a",
-        "disposition": "retained-codex-safety-overlay",
-        "rationale": "The Codex safety, authority, lifecycle, or capability overlay remains authoritative over host-specific upstream mechanics."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/why/references/sources/code-archaeology.md",
@@ -2561,12 +2121,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "a4a3970e9db448054aed676f3f7feeee667b4b69f0bd57c8fd72b751be687cc7",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/why/references/sources/databricks.md",
@@ -2578,12 +2133,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "236ede7aab6454662a992db088a5393537a5233a4c26719c93188f9e174488f6",
-        "disposition": "retained-codex-safety-overlay",
-        "rationale": "The Codex safety, authority, lifecycle, or capability overlay remains authoritative over host-specific upstream mechanics."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/why/references/sources/datadog.md",
@@ -2595,12 +2145,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "b139faac5dc11b8f26c8255dce6033c1a6ac143b038d3dd103f2034c5dbec9cd",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/why/references/sources/incident-postmortem.md",
@@ -2612,12 +2157,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "bf2661f1a81c37700884a45b77d6289be0c802b065febced31990e6564510839",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/why/references/sources/linear.md",
@@ -2629,12 +2169,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "01304e7f1badfcfb78babbb0edcadeb3cc8dd3f713793420cdff24ba190f907c",
-        "disposition": "retained-codex-safety-overlay",
-        "rationale": "The Codex safety, authority, lifecycle, or capability overlay remains authoritative over host-specific upstream mechanics."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/why/references/sources/notion.md",
@@ -2646,12 +2181,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "3bcfa695c49dfad4ac036d5d7181c12585f55ac04f1936198d16ab75a2788997",
-        "disposition": "retained-codex-safety-overlay",
-        "rationale": "The Codex safety, authority, lifecycle, or capability overlay remains authoritative over host-specific upstream mechanics."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/why/references/sources/sentry.md",
@@ -2663,12 +2193,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "2d4f83048eac1df530b399e2aed75dd7c9c18577b7665420aaeb96d0ceb0b702",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/why/references/sources/slack.md",
@@ -2680,12 +2205,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "3bc6309f5c7b26ace3b919dbd7f7b048861dd2020f910fe24f656cc74b3b661c",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/why/references/synthesizer-prompt.md",
@@ -2697,12 +2217,7 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "11c62671aa7b7a6e3d36929ffe2b59bf95e6ca664eee4d93e6ee527dd3390ddb",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     },
     {
       "upstreamPath": "skills/why/SKILL.md",
@@ -2714,25 +2229,11 @@
       ],
       "validations": [
         "skill-behavior"
-      ],
-      "refreshDisposition": {
-        "upstreamSha256": "144d42e7712723d763e607bc0a969e5f1cdf83ec7228519d87677cc534571bed",
-        "disposition": "port-upstream-with-codex-adaptations",
-        "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-      }
+      ]
     }
   ],
   "refresh": {
     "from": {
-      "repository": "https://github.com/cursor/plugins",
-      "subdirectory": "pstack",
-      "commit": "ccb5507cec1546dc88135c1139c811e6c59115ba",
-      "version": "0.15.15",
-      "retrievedAt": "2026-10-09",
-      "license": "MIT",
-      "licenseFile": "LICENSE"
-    },
-    "to": {
       "repository": "https://github.com/cursor/plugins",
       "subdirectory": "pstack",
       "commit": "1e5c90a4b6f249917bd21fe361b3a2a7deb741b8",
@@ -2741,10 +2242,19 @@
       "license": "MIT",
       "licenseFile": "LICENSE"
     },
+    "to": {
+      "repository": "https://github.com/cursor/plugins",
+      "subdirectory": "pstack",
+      "commit": "0148b78c56c72a1b8412055913c79f767095b217",
+      "version": "0.15.27",
+      "retrievedAt": "2026-10-19",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
     "fromFiles": [
       {
         "path": ".cursor-plugin/plugin.json",
-        "sha256": "7bc736c60985805f70465e044e5adc7028663f72a73deea7fa3e95e52d70dc8e",
+        "sha256": "cb705d5264bd77d466967ef3a0ab5ea91eb546849edbd311f4b80c78deccd98f",
         "bytes": 722
       },
       {
@@ -2754,13 +2264,13 @@
       },
       {
         "path": "agents/comment-sicko.md",
-        "sha256": "c0fd0383008da45fc78cfac17b9007d62c42f87ad1c8d5c2fb658b1fd01f7c82",
+        "sha256": "3e239e40b7b4b9beb2cf7f3ccc57f2388eb8b69bd1ba8ae888ef87ef6e0e2116",
         "bytes": 2230
       },
       {
         "path": "agents/poteto-agent.md",
-        "sha256": "abe41c169ecbfe65641f1725f4188d568e046c0dec7fd2dc271abb594c299201",
-        "bytes": 686
+        "sha256": "979f18abd000d185a0b4c41a2a4111c0910596a7f5c81cbb571885bc721b2bf7",
+        "bytes": 1316
       },
       {
         "path": "assets/logo.png",
@@ -2918,9 +2428,14 @@
         "bytes": 1067
       },
       {
+        "path": "plugin.json",
+        "sha256": "5c73bc6047d206cf64d8bfcbeb1d8cf6b46b86b8f782cdf694b42301345d9828",
+        "bytes": 619
+      },
+      {
         "path": "README.md",
-        "sha256": "7f39feae81103e18b567e1fa5075cba86425cf4697a01be66a7422ef93c2c855",
-        "bytes": 24538
+        "sha256": "193fa128aab7818b5244883befe6d79e69b4143e3a51a3d1e30efe99d31b40c3",
+        "bytes": 25431
       },
       {
         "path": "skills/architect/references/design-red-flags.md",
@@ -2939,23 +2454,23 @@
       },
       {
         "path": "skills/architect/SKILL.md",
-        "sha256": "922238947195f2fb825e90688bb6cfa520b81a35a7bee12223c73a6cf96ae64b",
-        "bytes": 5661
+        "sha256": "31f8e97a52bfa5432edd61f68ade2a8632ef0bacbc2d2a6802d7a0e6821944ac",
+        "bytes": 5469
       },
       {
         "path": "skills/arena/SKILL.md",
-        "sha256": "6e17736b5228b661569c3af054f8302c55cf9bf1649447652d53705cce38bed6",
-        "bytes": 4937
+        "sha256": "ed72f6c132b1ce3974d949581d0adc5dade424fe20793ac3b4c4fae22ecb9354",
+        "bytes": 4511
       },
       {
         "path": "skills/automate-me/SKILL.md",
-        "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
-        "bytes": 7164
+        "sha256": "30b35f3628c4fd8c11af0ada06d14cdc3b28901810caca2480f627d4d21acfbe",
+        "bytes": 7297
       },
       {
         "path": "skills/benchmark-checklist/SKILL.md",
-        "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
-        "bytes": 5409
+        "sha256": "ba109e96c8f6c1c391baccf19e5d11e14370df7b3f2605e1572cd565a6c0fca0",
+        "bytes": 5002
       },
       {
         "path": "skills/blast-radius/SKILL.md",
@@ -2989,13 +2504,13 @@
       },
       {
         "path": "skills/create-verification-skill/SKILL.md",
-        "sha256": "644f2551403c1bca01a2855b34611b6e7be0ce0dc5b204514c376c0f6a6e6ac4",
-        "bytes": 5879
+        "sha256": "d353973547bf8ad8977eca645f4cd4feaed0d32f4b43d1448f906b0a76c4d694",
+        "bytes": 6533
       },
       {
         "path": "skills/figure-it-out/SKILL.md",
-        "sha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
-        "bytes": 4059
+        "sha256": "bdb23cdbd82a1e6af094b495691c832a6f7f3ab9706ba9edbeb664ef51a726e1",
+        "bytes": 4111
       },
       {
         "path": "skills/how/references/explainer-prompt.md",
@@ -3004,13 +2519,18 @@
       },
       {
         "path": "skills/how/references/explorer-prompt.md",
-        "sha256": "a3b44a6e5bb16a6d4d1cac19db8ed5322ffd5f5f5d45baca4e73990ca096f8be",
-        "bytes": 2684
+        "sha256": "6300128385ee940fd42ecb84b0e623435440a2dc283eae54ee4a52ba56947ba1",
+        "bytes": 1135
       },
       {
         "path": "skills/how/SKILL.md",
-        "sha256": "7e0d902484a90eba73dcf518bff478dc5b962b456d23c3d0a188c2ce36b236d8",
-        "bytes": 3081
+        "sha256": "08a00079bb15b4258874ac3ff62d4ca7e94350ffedb521d0fd296dc9dd21904e",
+        "bytes": 2651
+      },
+      {
+        "path": "skills/in-your-own-words/SKILL.md",
+        "sha256": "fa8ba74e27d7be371dc270ec78bbf816411477d0dfab185356c861ac8dd413ad",
+        "bytes": 315
       },
       {
         "path": "skills/interrogate/references/code-quality-review.md",
@@ -3024,18 +2544,23 @@
       },
       {
         "path": "skills/interrogate/references/reviewer-prompt.md",
-        "sha256": "e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6",
-        "bytes": 2491
+        "sha256": "f6005cc2b535006fca97a96c5bfda49df57312eedf1ffd8d1aaaf3eb33817c25",
+        "bytes": 2275
       },
       {
         "path": "skills/interrogate/references/rubric.md",
-        "sha256": "a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25",
-        "bytes": 5025
+        "sha256": "0f9c6bdb0b96e26dbde5f6407f417e0c02f54080e7a1268d8994f3c3ec6c5ac0",
+        "bytes": 4772
       },
       {
         "path": "skills/interrogate/SKILL.md",
-        "sha256": "2f7e570ec23791ed2e485a09c98ed0597c46035e2050b351b84d3dc760ddd71f",
-        "bytes": 4998
+        "sha256": "a16dfe179005abc22a4651b82f25b0c8ab953284276efe4e6dc341958fb63647",
+        "bytes": 4548
+      },
+      {
+        "path": "skills/ketchup/SKILL.md",
+        "sha256": "d9704b154081af306b6583b2752498d454f9d761e9989ff1f037efd414f86bb4",
+        "bytes": 4858
       },
       {
         "path": "skills/maintain-verification-skill/SKILL.md",
@@ -3049,8 +2574,8 @@
       },
       {
         "path": "skills/no-comments/SKILL.md",
-        "sha256": "5c5b0882297d704c3a9720c52b7a793c68b013eaf717989f0945624efdfe2b05",
-        "bytes": 2560
+        "sha256": "078ecfe224eafbb017f6476870612838bf6dbe38c0b697e12f0c887d0313f17e",
+        "bytes": 2693
       },
       {
         "path": "skills/poteto-help/references/prompting.md",
@@ -3059,13 +2584,13 @@
       },
       {
         "path": "skills/poteto-help/references/recipes.md",
-        "sha256": "1872323419a3e5c7783b1933f7a180ca26c25a6e1f4ec83bd65e091ebbfb812b",
-        "bytes": 3287
+        "sha256": "5fb97a805976a82db0aba5cc8943e88d0cb38b17a0d6b8e89a44633677febb1a",
+        "bytes": 3355
       },
       {
         "path": "skills/poteto-help/SKILL.md",
-        "sha256": "ea71bcb15c023a5d9cc70686e4812144687ffe03bf80d85cc480af3e0b181d1e",
-        "bytes": 13433
+        "sha256": "1b0645c25200a19e5863583e117bad684b1b79ba8434823ebf4f6bbcc61e8a75",
+        "bytes": 13956
       },
       {
         "path": "skills/poteto-mode/playbooks/authoring-a-skill.md",
@@ -3074,43 +2599,43 @@
       },
       {
         "path": "skills/poteto-mode/playbooks/autonomous-run.md",
-        "sha256": "15e54ad3ac92565613980772d8708de6e19cc4690bfd4bb3fb8836522407377b",
-        "bytes": 1878
+        "sha256": "6ac974fd2b09748add56493e89f578a35a6a9289e1026515878d81ef3cf129d1",
+        "bytes": 1982
       },
       {
         "path": "skills/poteto-mode/playbooks/autopilot-full.md",
-        "sha256": "05ca30a16242c19d0c78ba1e88cca66f858d75252cb154fd740099fe292de802",
-        "bytes": 9431
+        "sha256": "acf4f4a58c11045f9d3e8807d907a877e61ca6432b079f1087d7d30fc931566f",
+        "bytes": 6596
       },
       {
         "path": "skills/poteto-mode/playbooks/autopilot-stack.md",
-        "sha256": "007c0a3b12011954a224f54773ef4ad7b75918be0a311914c1b51ad4e794c1e5",
-        "bytes": 5031
+        "sha256": "c6bcb18b2ce605e77a2a2225854590a4b9a687911f79331746d91a4fe9a52e60",
+        "bytes": 2205
       },
       {
         "path": "skills/poteto-mode/playbooks/babysit.md",
-        "sha256": "a0346c37c2313f36a863b80f66ee7b98059c2242adf74fc7b3e48abdb9ec6f5a",
-        "bytes": 8289
+        "sha256": "e261c1ff5581e0f8fc6c686f34de4b535f87473e77beabea7dd8323021214610",
+        "bytes": 7619
       },
       {
         "path": "skills/poteto-mode/playbooks/bug-fix.md",
-        "sha256": "018bbc146ae19145caa6c7e70591fee081b64447dda1c1c4b681c9974d928b13",
-        "bytes": 2255
+        "sha256": "66e26542dad131cfd7df80ac0cdf81ed4d85e7b5e3f0eb65b933888760c4831f",
+        "bytes": 2359
       },
       {
         "path": "skills/poteto-mode/playbooks/eval.md",
-        "sha256": "b862bfa2fae2399abf047a8e80d3e3dddb64003af96fb1cebb625216131e36bb",
-        "bytes": 2524
+        "sha256": "a93d449a908236afa6645179651844094b1547dbab4e484cffcdda630e4b90bf",
+        "bytes": 2628
       },
       {
         "path": "skills/poteto-mode/playbooks/feature.md",
-        "sha256": "3a62cc4a8cbcf144bb9dd05f05420a15be0d38b784d3b141bb730a5852f50a62",
-        "bytes": 2766
+        "sha256": "af8ce700b99953741cb547e34308fde0cf6b98ce67e1652c800d0deedf53aba1",
+        "bytes": 2870
       },
       {
         "path": "skills/poteto-mode/playbooks/hillclimb.md",
-        "sha256": "244f289898fe67a458065e90fe8217c916c5acf61cdee8975ade3f9831a12e91",
-        "bytes": 4403
+        "sha256": "942c1565b75ad02a2cb6230dd7c1ebd87e19f59a00319ebac2b6616007bf018f",
+        "bytes": 4507
       },
       {
         "path": "skills/poteto-mode/playbooks/investigation.md",
@@ -3119,18 +2644,18 @@
       },
       {
         "path": "skills/poteto-mode/playbooks/multi-phase-plan.md",
-        "sha256": "27d310e3fc3937a60b8fcbe1318f9d249a7477a722907bf85b3e4eb3dc436b11",
-        "bytes": 12977
+        "sha256": "5f239457bfdec3345c92caa06c59bf0257c662b89353f25a1c02ea942dcd00b1",
+        "bytes": 13217
       },
       {
         "path": "skills/poteto-mode/playbooks/opening-a-pr.md",
-        "sha256": "ab40de7163c1c6e274f46ee559b2e53ef45673703f601f13f4931c199e6fb90f",
-        "bytes": 6142
+        "sha256": "a5aef646de8b651306c2d10974623650e4a013a245aec1c00525bbe0e31bfa76",
+        "bytes": 5669
       },
       {
         "path": "skills/poteto-mode/playbooks/orchestrate.md",
-        "sha256": "d42b4375f1bd4ce23da0b575a198571a2117df7eea10c3c9fc6d92ae1053f7be",
-        "bytes": 16779
+        "sha256": "08dce6c9e7be1d13bc6944ab9b51665f935c531437f5e088bc53d2a62099ef05",
+        "bytes": 17127
       },
       {
         "path": "skills/poteto-mode/playbooks/pause-safely.md",
@@ -3139,8 +2664,8 @@
       },
       {
         "path": "skills/poteto-mode/playbooks/perf-issue.md",
-        "sha256": "2b88ad0f880e4d4d755ac19fe52414d6631d6baa816d060f53cf0a7429d7e14a",
-        "bytes": 1446
+        "sha256": "c12aa2f82de7651a11676a3d5fea168f539b7f0faaa3a501d279255dd2a469c8",
+        "bytes": 1550
       },
       {
         "path": "skills/poteto-mode/playbooks/prototype.md",
@@ -3149,28 +2674,28 @@
       },
       {
         "path": "skills/poteto-mode/playbooks/refactoring.md",
-        "sha256": "50f4f7d3d301551f8b8a57c3303c99958c5ca630ae0d0051823b6987c0eb5b96",
-        "bytes": 3211
+        "sha256": "0f5dd38113379ea8cf61e2182eca0a7478eea9a869eb40c2dddab3335aeca197",
+        "bytes": 3315
       },
       {
         "path": "skills/poteto-mode/playbooks/runtime-forensics.md",
-        "sha256": "594f02c40c243a346e1f57b688ecf2ed5e882f21b3d24ed2204d1ac6f1c24a8a",
-        "bytes": 1210
+        "sha256": "3463372b578c28f27c236f2627f09b5c5b1e85e86db7399fb984f3892fb450f5",
+        "bytes": 1314
       },
       {
         "path": "skills/poteto-mode/playbooks/session-pickup.md",
-        "sha256": "1604fb463f7c7410d43fa024ca76c1c1824c166a01fd69d61f073d06fdca2a47",
-        "bytes": 1678
+        "sha256": "d194f2a7ef392c1598ef3f0e3b561370ca25c2c7a78308007af4aa46ada8ee12",
+        "bytes": 1782
       },
       {
         "path": "skills/poteto-mode/playbooks/shipping.md",
-        "sha256": "19f3f6803a7bbe9ff04f624b03e3b55f07ac0a05e991aa00d5fe51239b920b2a",
-        "bytes": 5439
+        "sha256": "bf56339bdf7e0223bcff5abf4e8599e3f5b547b3fcc3b4ce9475e6e7dda14a9f",
+        "bytes": 4387
       },
       {
         "path": "skills/poteto-mode/playbooks/trace-forensics.md",
-        "sha256": "137ce3984fb96e45971fdff4d3c79fa4ccc647c5b30ae4945783b9fb23f8cec7",
-        "bytes": 1865
+        "sha256": "ef0bbf79856a4ae1a8993d54c1a1da159cb97623941b652c0069cf75a017e0f5",
+        "bytes": 1867
       },
       {
         "path": "skills/poteto-mode/playbooks/visual-parity.md",
@@ -3179,8 +2704,8 @@
       },
       {
         "path": "skills/poteto-mode/playbooks/worktree-cleanup.md",
-        "sha256": "fc464dc4121926df1704f483c5feca83717c0a40b4651d3e11bd3aedd89441b6",
-        "bytes": 2932
+        "sha256": "be04ae0afe19d4a4da5bcc4e94455f68dbebd1cda6eb0f456ca0d358ecf76c00",
+        "bytes": 2947
       },
       {
         "path": "skills/poteto-mode/references/bugbot-triage.md",
@@ -3199,28 +2724,33 @@
       },
       {
         "path": "skills/poteto-mode/scripts/check-plan.mjs",
-        "sha256": "4f9432d9989880b6afc2bdda503d5b12a9d07d357ecf31936b7ab5e83bc80523",
-        "bytes": 7594
+        "sha256": "e58c3d871b09d477be00628d69dd23ffa6c2e3a1728f5b867a841baa8e90278b",
+        "bytes": 8153
+      },
+      {
+        "path": "skills/poteto-mode/scripts/check-plan.test.ts",
+        "sha256": "c80f3ea043b81f219b92c4c8a3af6bdd4f8d32ea596ec15b5b9e0252645f2ae8",
+        "bytes": 3289
       },
       {
         "path": "skills/poteto-mode/scripts/orch/orch.test.ts",
-        "sha256": "773153ac74de6eb15f58d2682f487f5f30672d7efe3ef1d24a131aa9129d279b",
-        "bytes": 18425
+        "sha256": "5e80b416bdcd68e4067690ce857345852fd2e0db3dcf3e25607999cd55b963d2",
+        "bytes": 21801
       },
       {
         "path": "skills/poteto-mode/scripts/orch/orch.ts",
-        "sha256": "f091687df627a0b75fabd54af58945a9cd6c7039ef0622012ac9ed60cd8ec434",
-        "bytes": 15511
+        "sha256": "47c92c57e8276616d8de94665a126bd832e748036afa8d0ffdbacb7946decb5c",
+        "bytes": 15737
       },
       {
         "path": "skills/poteto-mode/scripts/orch/store.ts",
-        "sha256": "0eae7cf69282e827b1227166f2e32cee3560f2f3e65b3f1f2faf6fb83d3b4c5b",
-        "bytes": 42927
+        "sha256": "558cfda533e1ebe7c8d7842604f07e0be7618759cf129b4c2397a8e29516ecea",
+        "bytes": 44466
       },
       {
         "path": "skills/poteto-mode/scripts/package.json",
-        "sha256": "d1f815091209d49763775cc188e8e06ff32d5fec648bffd2272bc25a165e87c3",
-        "bytes": 352
+        "sha256": "fd511a0c01f522e0c781ddd8eccea0e91697a0856c6e6a3261de78a6a0287c72",
+        "bytes": 371
       },
       {
         "path": "skills/poteto-mode/scripts/watch-pr/cli.test.ts",
@@ -3234,28 +2764,28 @@
       },
       {
         "path": "skills/poteto-mode/scripts/watch-pr/fakes.test-helper.ts",
-        "sha256": "e53e31b7f03068063f53a99a3591b052aaed66e4e2b196b3a364980f60324ab1",
-        "bytes": 2944
+        "sha256": "cf0c5ee61b4a73444c1b775cfb6c81a40d312e055dd21a1f5eae6276e54de13f",
+        "bytes": 3357
       },
       {
         "path": "skills/poteto-mode/scripts/watch-pr/github.test.ts",
-        "sha256": "0cbce011050522938523e36bb42a260e92b812dcd2076930fa681672ad316b24",
-        "bytes": 9059
+        "sha256": "70c9f03d8738228763846f2abdd8c7de7be68dba3035041482386a69cbf5639b",
+        "bytes": 13101
       },
       {
         "path": "skills/poteto-mode/scripts/watch-pr/github.ts",
-        "sha256": "d1bbbafbe8e2c703c84da2029de7f2c4011412512f8cf65a42100f46bcb92c8a",
-        "bytes": 24072
+        "sha256": "a605b8531468dbe4c07b93663c0993a9c11dc7e9179adde970f5c740396451d9",
+        "bytes": 25198
       },
       {
         "path": "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
-        "sha256": "a9fedb25feefd1f57ef6a662f80c99018690170a3a8070773a08eaf694d1d3d9",
-        "bytes": 12397
+        "sha256": "146acabcfee9b6fa3342358eb0a9504aa65fd081bbc15b10adf9c1c5485067d2",
+        "bytes": 12405
       },
       {
         "path": "skills/poteto-mode/scripts/watch-pr/policy.ts",
-        "sha256": "68d240505852cf23c9b2dea463342e9e61243f486b3cc86c735d140f9ee7be49",
-        "bytes": 25132
+        "sha256": "f2a3e31223d05edc05e5473cc3f8f3cb9bd20c202c30c6abe7f21f0f7aee8fbb",
+        "bytes": 25169
       },
       {
         "path": "skills/poteto-mode/scripts/watch-pr/render.ts",
@@ -3274,8 +2804,8 @@
       },
       {
         "path": "skills/poteto-mode/scripts/watch-pr/types.ts",
-        "sha256": "64ba6221e3bfe61bbb292337d199cdec6309455477280efb060203dba34e0e91",
-        "bytes": 12359
+        "sha256": "0cac435294dc85ce1ba755e8e67f6c5ab163dfa252f2722d6e3a2d68c58fec59",
+        "bytes": 12649
       },
       {
         "path": "skills/poteto-mode/scripts/watch-pr/watch-pr",
@@ -3284,13 +2814,13 @@
       },
       {
         "path": "skills/poteto-mode/scripts/worktree-audit.sh",
-        "sha256": "95b8530f3c0ccada8cabc4b0727c052fbc85c141531375aaace65c427af8aecc",
-        "bytes": 3984
+        "sha256": "e0a94e5e5b1ff60638916e440600e15851f7b79bc1a1d1f602fde05d465e2ec0",
+        "bytes": 6003
       },
       {
         "path": "skills/poteto-mode/SKILL.md",
-        "sha256": "31cd02290360ce63564ef22b74d69fc6d90e62181d05a644cbed8f6c47cc9412",
-        "bytes": 20563
+        "sha256": "f234661471847cafc4ae9bcb4a9208eb32ed8154ac25b91b2b064ec71bd62167",
+        "bytes": 20429
       },
       {
         "path": "skills/principle-attack-the-premise/SKILL.md",
@@ -3304,18 +2834,18 @@
       },
       {
         "path": "skills/principle-build-the-lever/SKILL.md",
-        "sha256": "458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56",
-        "bytes": 2458
+        "sha256": "3434b0ad0c640c6f1d7960be7a8986c3bcdc14e26060360dec29903df60074ff",
+        "bytes": 2386
       },
       {
         "path": "skills/principle-encode-lessons-in-structure/SKILL.md",
-        "sha256": "77044c83a9ac6df78fc643887ea5f1f11f082adaf14b717c060cdaed03cce863",
-        "bytes": 2211
+        "sha256": "228963799189f481827d6f28065f278bc2008ffa37030b1234cbd5814d36b9e9",
+        "bytes": 558
       },
       {
         "path": "skills/principle-exhaust-the-design-space/SKILL.md",
-        "sha256": "8583310d7297b7823d75494faa57b003564d436807febecdecbd8321abe5cf6e",
-        "bytes": 1152
+        "sha256": "2de83d99f93f60ec6313455b0bc9aa9f0bfb93dd59f414f403691322db00d4db",
+        "bytes": 395
       },
       {
         "path": "skills/principle-experience-first/SKILL.md",
@@ -3324,13 +2854,13 @@
       },
       {
         "path": "skills/principle-explain-the-number/SKILL.md",
-        "sha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
-        "bytes": 2109
+        "sha256": "cd5a25f9e7cf023627ccb470dc5faa97542f29b4319496a32b839a8e1e988047",
+        "bytes": 1663
       },
       {
         "path": "skills/principle-fix-root-causes/SKILL.md",
-        "sha256": "ba4cd38da1dcc8fe5432feb64457cba95594736a9b21b2ebf8f8c52aee068707",
-        "bytes": 1246
+        "sha256": "2131069d285d82fb799458494f2e4ac8759c9c6a60f9e300828c17874f514c6e",
+        "bytes": 1369
       },
       {
         "path": "skills/principle-foundational-thinking/SKILL.md",
@@ -3339,13 +2869,13 @@
       },
       {
         "path": "skills/principle-guard-the-context-window/SKILL.md",
-        "sha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
-        "bytes": 939
+        "sha256": "af0b9dd70b43628ce4a59a4d332e9d9ad055084e460f430e7a757495c627e81a",
+        "bytes": 519
       },
       {
         "path": "skills/principle-laziness-protocol/SKILL.md",
-        "sha256": "9006579e9e3f33955d17569733db688ae65f22577dc3b21803d219a5a8445aff",
-        "bytes": 1371
+        "sha256": "1be6e7a435f26a75a76eb848b9c3d611b9977d0f5822361753244da25ca3ca45",
+        "bytes": 552
       },
       {
         "path": "skills/principle-make-operations-idempotent/SKILL.md",
@@ -3359,18 +2889,18 @@
       },
       {
         "path": "skills/principle-minimize-reader-load/SKILL.md",
-        "sha256": "42551c5dc74cd578163c148da552db3ff67d29b78600ef216bfd311fb828fe69",
-        "bytes": 2095
+        "sha256": "1ea2b7fef2391cae5844c4efdbd59031f775e8a52d06b7495d707229a200dcca",
+        "bytes": 1996
       },
       {
         "path": "skills/principle-model-the-domain/SKILL.md",
-        "sha256": "bbadbb9a723fac3f76e782ae45665eb94058ec10993e4bae36d4dc6b0e4eac07",
-        "bytes": 2082
+        "sha256": "52c0d85e0c3827c41c18299b642657d7b47eaf77b7b31609e42e0df42b84c75f",
+        "bytes": 1858
       },
       {
         "path": "skills/principle-never-block-on-the-human/SKILL.md",
-        "sha256": "f2764bb9338cbfc788c903cf4b9cd0a5f4042d3a04dd6d59cbd525d9beaadd0a",
-        "bytes": 1172
+        "sha256": "05030a7a083c337676f793881b4e93cd218e8f1dd676529f56e6ac1d3efb8d1f",
+        "bytes": 910
       },
       {
         "path": "skills/principle-outcome-oriented-execution/SKILL.md",
@@ -3384,8 +2914,8 @@
       },
       {
         "path": "skills/principle-redesign-from-first-principles/SKILL.md",
-        "sha256": "a1c7fd0a96b40e12a74bceb0e6bb20a9666dd844dcabfb624acb27da23b929fe",
-        "bytes": 844
+        "sha256": "170e0a658783e43fee8ec5a8c2422a4abb8f69cef621dd1819a95910b8207034",
+        "bytes": 758
       },
       {
         "path": "skills/principle-separate-before-serializing-shared-state/SKILL.md",
@@ -3399,53 +2929,58 @@
       },
       {
         "path": "skills/principle-subtract-before-you-add/SKILL.md",
-        "sha256": "a983a50e732c1ed315eba7aaf47a61329e31c4794eb1ab9d25d9945265b31e03",
-        "bytes": 1094
+        "sha256": "8c93bb9d1a7f38e2ef37655d93f0e790fa59903105af3d500cc8a663ebe45f3f",
+        "bytes": 909
       },
       {
         "path": "skills/principle-test-behavior-not-implementation/SKILL.md",
-        "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
-        "bytes": 2575
+        "sha256": "b2b73ba42920f9c3174ecdf808ec6e4591b3a9266ada9a05814f386004266d3a",
+        "bytes": 1386
       },
       {
         "path": "skills/principle-type-system-discipline/SKILL.md",
-        "sha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
-        "bytes": 4922
+        "sha256": "2e492cef34bb25a20b9115df61f9ef3a9837e3fda144ffda8079e5f45a1b72e8",
+        "bytes": 3661
       },
       {
         "path": "skills/recall/SKILL.md",
-        "sha256": "d265b0e5b6dc5b89c0407f3387d24462c988e1990a37d5359735137908128c5a",
-        "bytes": 5212
+        "sha256": "b0ceb996259c3404532f61e4b010df4e3d80d7ddbed85b3c302895723eb62a89",
+        "bytes": 5345
       },
       {
         "path": "skills/reflect/references/divergent-reviewer.md",
-        "sha256": "221dfc0abf7cbcd25e1da3cd87323f5d1050fc3bf652e096d093584e183c98fb",
-        "bytes": 3889
+        "sha256": "f6030d88e20e906ef5e2d9ba44cb013ce610c49c2fe2ef74c377d32e0dc9e939",
+        "bytes": 3668
       },
       {
         "path": "skills/reflect/references/judgment-reviewer.md",
-        "sha256": "a40ecb9b28bd2a3491e11a541157fe58efe158e0eda7b61a5006c14590aabe61",
-        "bytes": 3255
+        "sha256": "38f917619fbf346062d643e0ad6b12fc952d58678dfcbbf42ffcf6d8b9c08307",
+        "bytes": 3107
       },
       {
         "path": "skills/reflect/references/synthesizer.md",
-        "sha256": "2f76c847eb45b182dc6fbcbf7d96c8ee7e2986ecfd9e0d640fec44e3cc5a617c",
-        "bytes": 4164
+        "sha256": "6af816963de74d1a1aef4070273c1ff533d2072732e488e159ddc0b299fec3cd",
+        "bytes": 4141
       },
       {
         "path": "skills/reflect/references/tooling-reviewer.md",
-        "sha256": "bc49ced90fa81eaba3083b88aeb430d900a6d8f14ff40c1d6b52263bacfc77b6",
-        "bytes": 4609
+        "sha256": "f81b8697e7366fbbc18feba52c6e3253a101f751091364ebc4396a1d9b5753b4",
+        "bytes": 4448
       },
       {
         "path": "skills/reflect/SKILL.md",
-        "sha256": "31b8fb866ebe084e7fb7f16dc0ea46ab84ffdc838d54f948edc78556f301a497",
-        "bytes": 4992
+        "sha256": "1f5a8c246cdee8251f8667d85bd5d97f6c2801f505843c26ddbd6c621632519b",
+        "bytes": 4766
       },
       {
         "path": "skills/setup-pstack/SKILL.md",
         "sha256": "d61b47256a18155a81c8e5ef95e3cc6569ce8c18317c35c4dd9c8015cf68cb59",
         "bytes": 5716
+      },
+      {
+        "path": "skills/sharpen/SKILL.md",
+        "sha256": "6bcd73916696eb9c5b79b6f960983760c34bcc28937c11142dd8d86b5107aa46",
+        "bytes": 792
       },
       {
         "path": "skills/show-me-your-work/references/decision-log-template.tsv",
@@ -3459,13 +2994,13 @@
       },
       {
         "path": "skills/show-me-your-work/SKILL.md",
-        "sha256": "bcff5f7f9fd23f92c12b251f9cd6b947e9485e1055cfacb6fdd9cae0789d7550",
-        "bytes": 6418
+        "sha256": "920a8217cbb62f92a2222fb81fc9eab17ecd554a0277e444a95a927195139bd1",
+        "bytes": 6551
       },
       {
         "path": "skills/swarm/SKILL.md",
-        "sha256": "bdcee4168e22428036e93d7cdeec3f391dbc4132f927f6db2540328c22db0273",
-        "bytes": 2949
+        "sha256": "c8fe1b28282e7a051a4041a146a11f076e0fd95252bb010106a58209805303d5",
+        "bytes": 3082
       },
       {
         "path": "skills/tdd/SKILL.md",
@@ -3479,8 +3014,8 @@
       },
       {
         "path": "skills/technical-writing/SKILL.md",
-        "sha256": "f5c512ffeec70bc4e0dee50f7bb4c26742e1be77967a6e8b15d1921e1c209ceb",
-        "bytes": 9792
+        "sha256": "61fe9c424a798ebf36ad94941f87be049cb8827bdf86d21474a0dde37b513c43",
+        "bytes": 9093
       },
       {
         "path": "skills/typescript-best-practices/references/patterns.md",
@@ -3494,18 +3029,18 @@
       },
       {
         "path": "skills/unslop/SKILL.md",
-        "sha256": "195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1",
-        "bytes": 6015
+        "sha256": "ccab208e315ce05e2fab8eeee2f7879f1289b5c6844840b2d307adf31c79144f",
+        "bytes": 5827
       },
       {
         "path": "skills/why/references/epistemics.md",
-        "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
-        "bytes": 7749
+        "sha256": "d54a2361b2d5973bc3fe2edf62f446d87935974d4b40d47f23b9529f956ca758",
+        "bytes": 6736
       },
       {
         "path": "skills/why/references/investigator-prompt.md",
-        "sha256": "6892956a7ab0b5ee6c4babaf4f793703abe89b350ea7cb9463b4a56eea1c8266",
-        "bytes": 6985
+        "sha256": "c44afba186f899094f3694e6c9d6de5d14ff7c4ce28b787a9f50fc789c9a7fc3",
+        "bytes": 5554
       },
       {
         "path": "skills/why/references/source-playbook.md",
@@ -3514,8 +3049,8 @@
       },
       {
         "path": "skills/why/references/sources/code-archaeology.md",
-        "sha256": "8c14aa382f0de40829b2668d43e3f54814480bb93a486c9282ada4003f6b9dbd",
-        "bytes": 3489
+        "sha256": "a4a3970e9db448054aed676f3f7feeee667b4b69f0bd57c8fd72b751be687cc7",
+        "bytes": 1440
       },
       {
         "path": "skills/why/references/sources/databricks.md",
@@ -3524,13 +3059,13 @@
       },
       {
         "path": "skills/why/references/sources/datadog.md",
-        "sha256": "ebe9c07bac28e47757ee7f16fb93b0c01d427a08c501957d047f395a2f37b7e7",
-        "bytes": 5323
+        "sha256": "b139faac5dc11b8f26c8255dce6033c1a6ac143b038d3dd103f2034c5dbec9cd",
+        "bytes": 4971
       },
       {
         "path": "skills/why/references/sources/incident-postmortem.md",
-        "sha256": "a899470f05f86029630a13a2696491cc708ca7b56a6e822a69ff6e954d6ff8cf",
-        "bytes": 1973
+        "sha256": "bf2661f1a81c37700884a45b77d6289be0c802b065febced31990e6564510839",
+        "bytes": 372
       },
       {
         "path": "skills/why/references/sources/linear.md",
@@ -3544,28 +3079,28 @@
       },
       {
         "path": "skills/why/references/sources/sentry.md",
-        "sha256": "6f292bc4fb1548e956f95e1900b9481abf5134254419f1cd9edec95428c82d73",
-        "bytes": 4947
+        "sha256": "2d4f83048eac1df530b399e2aed75dd7c9c18577b7665420aaeb96d0ceb0b702",
+        "bytes": 2089
       },
       {
         "path": "skills/why/references/sources/slack.md",
-        "sha256": "58fee61d024b3700b407e7acbed367944720ff05adfddb6954d36c88368f3ba7",
-        "bytes": 3105
+        "sha256": "3bc6309f5c7b26ace3b919dbd7f7b048861dd2020f910fe24f656cc74b3b661c",
+        "bytes": 1336
       },
       {
         "path": "skills/why/references/synthesizer-prompt.md",
-        "sha256": "733a3e9cf897b1aca56aaddeae01a3832e4bfed024c2f602db2d1bf807d7a73b",
-        "bytes": 7984
+        "sha256": "11c62671aa7b7a6e3d36929ffe2b59bf95e6ca664eee4d93e6ee527dd3390ddb",
+        "bytes": 7146
       },
       {
         "path": "skills/why/SKILL.md",
-        "sha256": "442215bf70e491d4d31bd200c197f2ec447445df38e074c40880fc4bf30a1f9e",
-        "bytes": 10362
+        "sha256": "144d42e7712723d763e607bc0a969e5f1cdf83ec7228519d87677cc534571bed",
+        "bytes": 8903
       }
     ],
     "deltaCounts": {
-      "added": 5,
-      "changed": 82,
+      "added": 2,
+      "changed": 29,
       "deleted-or-renamed": 0
     }
   },
@@ -3573,698 +3108,250 @@
     {
       "path": ".cursor-plugin/plugin.json",
       "kind": "changed",
-      "oldSha256": "7bc736c60985805f70465e044e5adc7028663f72a73deea7fa3e95e52d70dc8e",
-      "newSha256": "cb705d5264bd77d466967ef3a0ab5ea91eb546849edbd311f4b80c78deccd98f",
-      "disposition": "replaced-by-codex-manifest",
-      "rationale": "Keep the supported Codex manifest and namespace."
+      "oldSha256": "cb705d5264bd77d466967ef3a0ab5ea91eb546849edbd311f4b80c78deccd98f",
+      "newSha256": "184b91c18687eded950cd926e438789a37db875b058914ebc49605eb4c674c76",
+      "disposition": "retain-codex-manifest",
+      "rationale": "Record official 0.15.27; use the distinct 0.5.0 Codex manifest. Omit host manifests and installation interfaces."
     },
     {
-      "path": "agents/comment-sicko.md",
+      "path": "docs/guide/01-setup.md",
       "kind": "changed",
-      "oldSha256": "c0fd0383008da45fc78cfac17b9007d62c42f87ad1c8d5c2fb658b1fd01f7c82",
-      "newSha256": "3e239e40b7b4b9beb2cf7f3ccc57f2388eb8b69bd1ba8ae888ef87ef6e0e2116",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "86d0330f245d16254a2069955f993c15d96cf29cd1a73690a0164074b7ac1190",
+      "newSha256": "aa98b876e635ce34803a8587cd66772de7cdf9e0f9217614a97b0462d6eafbfa",
+      "disposition": "omit-host-link-change",
+      "rationale": "The changed anchor is a Cursor custom-mode feature. Keep Codex explicit invocation and trusted-hook instructions."
     },
     {
-      "path": "agents/poteto-agent.md",
+      "path": "docs/guide/02-poteto-mode.md",
       "kind": "changed",
-      "oldSha256": "abe41c169ecbfe65641f1725f4188d568e046c0dec7fd2dc271abb594c299201",
-      "newSha256": "979f18abd000d185a0b4c41a2a4111c0910596a7f5c81cbb571885bc721b2bf7",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "979f61ca3d44cb8e68affda40327d32797e93fa9cc53ced7444c15e2600897e1",
+      "newSha256": "823262786c149affc1a037798ddd669855dd12c60938da40aed98d54a63cd026",
+      "disposition": "port-route-clarification",
+      "rationale": "Clarify independent PR queue versus linear stack routing without changing lifecycle authority."
+    },
+    {
+      "path": "docs/guide/03-understand.md",
+      "kind": "changed",
+      "oldSha256": "0090afa9b8670adf175466a2a973ff4349e95ed67d2aa8cebdfc55ff4b7382c9",
+      "newSha256": "1ac97cbad51c15c18b3aade8634d81c8bbe50d2b3135c75c113ddb2a6dcb7af0",
+      "disposition": "retain-codex-guide",
+      "rationale": "Metaphor and wording edits affect upstream prose absent from the concise Codex investigation guide."
+    },
+    {
+      "path": "docs/guide/04-design.md",
+      "kind": "changed",
+      "oldSha256": "31f2abe6e9b29feafd1a9eece8f4fe21992f86b8c19ab2e9b5c11a20f36587e7",
+      "newSha256": "cff616278303b533e617c5c4408af6d28895edbb8687d6ce99bb5dd1f6644a6c",
+      "disposition": "retain-codex-guide",
+      "rationale": "The punctuation edit affects upstream prose absent from the Codex design guide."
+    },
+    {
+      "path": "docs/guide/05-build-and-clean.md",
+      "kind": "changed",
+      "oldSha256": "a93cc7771f7b35c7b54d0120b6f66e8367794ce6791237e889a30e7585c190fa",
+      "newSha256": "1284e80595ae4f214dfa7c5c5f7758ff90a47b3273aa7b8142e51e574f5c5290",
+      "disposition": "retain-codex-guide",
+      "rationale": "The conjunction and performance wording edits affect prose already replaced by measured-output instructions."
+    },
+    {
+      "path": "docs/guide/06-verify-and-ship.md",
+      "kind": "changed",
+      "oldSha256": "3ef0eed5ea084dfbbaf1b1ae9e08d84f2c8a2b536ffb3ef5226710bf105f70e6",
+      "newSha256": "f9cb57c88e3c1732ed8e22dce8023d7425cbb69ea4e237ddd486cb88273d2b10",
+      "disposition": "retain-codex-guide",
+      "rationale": "Retain the concise proof and product-regression boundaries. Upstream wording edits target replaced prose; omit the unrequested daily scheduling recommendation. Add the new formal-verification route."
+    },
+    {
+      "path": "docs/guide/07-overnight.md",
+      "kind": "changed",
+      "oldSha256": "d7bd33a3d880768688dff4c1c2b5481ca9f0f194f5d97e44b65c9f96624d3ff0",
+      "newSha256": "03142cbeebd6f90211a5841d02faa90a0810d0993c9ffccf4045b463c472339c",
+      "disposition": "port-verification-cadence",
+      "rationale": "Adopt one fresh verifier for a later rebase or minor fix and a full swarm for new behavior or a large diff. Synchronize the autopilot-full playbook; preserve affected gates, live proof, current-patch verdict, and merge authority."
+    },
+    {
+      "path": "docs/guide/08-principles.md",
+      "kind": "changed",
+      "oldSha256": "73c3db659d356d4aa6d7674d30d0db46fab2bdd60152fca717c2d1772a042bdc",
+      "newSha256": "0b26b85292f0c09768abe727c9e92987dbf81f5b439a4871034c2fd1c4cb1723",
+      "disposition": "port-principle-summary",
+      "rationale": "Describe direct premise testing and observable behavior checks; keep the Codex principle index and normalized names. Omit redundant upstream prose edits."
+    },
+    {
+      "path": "docs/guide/09-make-it-yours.md",
+      "kind": "changed",
+      "oldSha256": "157e0c20ad3c657857c2fbbea3afd26895b71b8f68475bc56f4c382dcdd0e118",
+      "newSha256": "003d2f5ed526dd9f95f8fd2ea78dc98a29ee68caa96569d2042a575ca971bdf7",
+      "disposition": "retain-codex-guide",
+      "rationale": "Upstream wording edits target replaced prose. Keep supported Codex history, explicit edit authority, and project skill locations."
+    },
+    {
+      "path": "docs/guide/10-recipes-and-pitfalls.md",
+      "kind": "changed",
+      "oldSha256": "c652474764b08da4a6364d85f5d03cf1fc1cf35e9d7c549348fb66e2d09f7b1f",
+      "newSha256": "63f33aef9f60dd62200ae1da16c4394ff618c8345d21f735ab54299f3336a682",
+      "disposition": "retain-codex-guide",
+      "rationale": "Upstream metaphor edits target replaced prose. Keep exclusive-path or worktree isolation rather than the cloud-agent recipe."
     },
     {
       "path": "plugin.json",
-      "kind": "added",
-      "oldSha256": null,
-      "newSha256": "5c73bc6047d206cf64d8bfcbeb1d8cf6b46b86b8f782cdf694b42301345d9828",
-      "disposition": "replaced-by-codex-manifest",
-      "rationale": "Keep the supported Codex manifest and namespace."
+      "kind": "changed",
+      "oldSha256": "5c73bc6047d206cf64d8bfcbeb1d8cf6b46b86b8f782cdf694b42301345d9828",
+      "newSha256": "56878d2dc782978e1a8f64c84336fa7117214f7c525e862e73933539952ebc8f",
+      "disposition": "retain-codex-manifest",
+      "rationale": "Record official 0.15.27; use the distinct 0.5.0 Codex manifest. Omit host manifests and installation interfaces."
     },
     {
       "path": "README.md",
       "kind": "changed",
-      "oldSha256": "7f39feae81103e18b567e1fa5075cba86425cf4697a01be66a7422ef93c2c855",
-      "newSha256": "193fa128aab7818b5244883befe6d79e69b4143e3a51a3d1e30efe99d31b40c3",
-      "disposition": "retain-codex-host-contract",
-      "rationale": "Retain Codex installation, explicit-only discovery, and the existing dependency contract."
+      "oldSha256": "193fa128aab7818b5244883befe6d79e69b4143e3a51a3d1e30efe99d31b40c3",
+      "newSha256": "4de92d6b1fdcc6f7c79913ab24a70a7bd0cabacbdd788112271398a47b907c97",
+      "disposition": "port-content-retain-codex-guide",
+      "rationale": "Add formal-verification discovery and current content summary. Ketchup and principle descriptions live in their skills; cadence is synchronized in the Codex guide and playbook. Omit Cursor custom-mode links, Claude installation/generated-tree instructions, Cursor built-in autopilot names, fixed model defaults, and Cursor-only Benny claims; retain Codex hooks, model discovery, and dormant polling. Upstream editorial changes target prose already replaced in this guide."
     },
     {
-      "path": "skills/architect/SKILL.md",
+      "path": "skills/correct/SKILL.md",
       "kind": "changed",
-      "oldSha256": "922238947195f2fb825e90688bb6cfa520b81a35a7bee12223c73a6cf96ae64b",
-      "newSha256": "31f8e97a52bfa5432edd61f68ade2a8632ef0bacbc2d2a6802d7a0e6821944ac",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "bf482bacc972b3f124a4af8bf9364b4b3e280cb5845e44c326ea4f4565e5c904",
+      "newSha256": "e347045d00c967a0b831ef883cc6ac79d21329aa10b5968637df95de7febf0ba",
+      "disposition": "port-test-guidance",
+      "rationale": "Adopt behavior-breaking versus internal-refactor checks; retain scoped recurrence audits and supported history access."
     },
     {
-      "path": "skills/arena/SKILL.md",
+      "path": "skills/interrogate/references/lead-judgment.md",
       "kind": "changed",
-      "oldSha256": "6e17736b5228b661569c3af054f8302c55cf9bf1649447652d53705cce38bed6",
-      "newSha256": "ed72f6c132b1ce3974d949581d0adc5dade424fe20793ac3b4c4fae22ecb9354",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/automate-me/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
-      "newSha256": "30b35f3628c4fd8c11af0ada06d14cdc3b28901810caca2480f627d4d21acfbe",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/benchmark-checklist/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
-      "newSha256": "ba109e96c8f6c1c391baccf19e5d11e14370df7b3f2605e1572cd565a6c0fca0",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/create-verification-skill/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "644f2551403c1bca01a2855b34611b6e7be0ce0dc5b204514c376c0f6a6e6ac4",
-      "newSha256": "d353973547bf8ad8977eca645f4cd4feaed0d32f4b43d1448f906b0a76c4d694",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/figure-it-out/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
-      "newSha256": "bdb23cdbd82a1e6af094b495691c832a6f7f3ab9706ba9edbeb664ef51a726e1",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/how/references/explorer-prompt.md",
-      "kind": "changed",
-      "oldSha256": "a3b44a6e5bb16a6d4d1cac19db8ed5322ffd5f5f5d45baca4e73990ca096f8be",
-      "newSha256": "6300128385ee940fd42ecb84b0e623435440a2dc283eae54ee4a52ba56947ba1",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/how/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "7e0d902484a90eba73dcf518bff478dc5b962b456d23c3d0a188c2ce36b236d8",
-      "newSha256": "08a00079bb15b4258874ac3ff62d4ca7e94350ffedb521d0fd296dc9dd21904e",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/in-your-own-words/SKILL.md",
-      "kind": "added",
-      "oldSha256": null,
-      "newSha256": "fa8ba74e27d7be371dc270ec78bbf816411477d0dfab185356c861ac8dd413ad",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/interrogate/references/reviewer-prompt.md",
-      "kind": "changed",
-      "oldSha256": "e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6",
-      "newSha256": "f6005cc2b535006fca97a96c5bfda49df57312eedf1ffd8d1aaaf3eb33817c25",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/interrogate/references/rubric.md",
-      "kind": "changed",
-      "oldSha256": "a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25",
-      "newSha256": "0f9c6bdb0b96e26dbde5f6407f417e0c02f54080e7a1268d8994f3c3ec6c5ac0",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/interrogate/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "2f7e570ec23791ed2e485a09c98ed0597c46035e2050b351b84d3dc760ddd71f",
-      "newSha256": "a16dfe179005abc22a4651b82f25b0c8ab953284276efe4e6dc341958fb63647",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
+      "newSha256": "355f5195a76bc75a655125292369f2a8231a2b61fabe5188d8f1386060922b87",
+      "disposition": "port-upstream-deletions",
+      "rationale": "Remove redundant lead preamble and verdict-size cap while retaining actionable filtering and scrutiny of security and correctness findings."
     },
     {
       "path": "skills/ketchup/SKILL.md",
-      "kind": "added",
-      "oldSha256": null,
-      "newSha256": "d9704b154081af306b6583b2752498d454f9d761e9989ff1f037efd414f86bb4",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "kind": "changed",
+      "oldSha256": "d9704b154081af306b6583b2752498d454f9d761e9989ff1f037efd414f86bb4",
+      "newSha256": "f2923ffd14f6fc778f75a47aaed1f317fb5fd00b5701ca769d6446c74106dead",
+      "disposition": "port-with-codex-invocation",
+      "rationale": "Adopt complete per-item decisions, evidence and risk, flexible length, and meaningful inline visuals. Keep read-only behavior, dollar invocation, and available visualization tools rather than a host-specific command."
     },
     {
-      "path": "skills/no-comments/SKILL.md",
+      "path": "skills/make-bot-ui/SKILL.md",
       "kind": "changed",
-      "oldSha256": "5c5b0882297d704c3a9720c52b7a793c68b013eaf717989f0945624efdfe2b05",
-      "newSha256": "078ecfe224eafbb017f6476870612838bf6dbe38c0b697e12f0c887d0313f17e",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-help/references/recipes.md",
-      "kind": "changed",
-      "oldSha256": "1872323419a3e5c7783b1933f7a180ca26c25a6e1f4ec83bd65e091ebbfb812b",
-      "newSha256": "5fb97a805976a82db0aba5cc8943e88d0cb38b17a0d6b8e89a44633677febb1a",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec",
+      "newSha256": "ad19d0bc6764287ec08c2521701974e7dac941f72e4d0fe81a24f4614494586f",
+      "disposition": "already-adapted",
+      "rationale": "The lowercase skill name already matches the upstream correction; no runtime or permission change is needed."
     },
     {
       "path": "skills/poteto-help/SKILL.md",
       "kind": "changed",
-      "oldSha256": "ea71bcb15c023a5d9cc70686e4812144687ffe03bf80d85cc480af3e0b181d1e",
-      "newSha256": "1b0645c25200a19e5863583e117bad684b1b79ba8434823ebf4f6bbcc61e8a75",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/autonomous-run.md",
-      "kind": "changed",
-      "oldSha256": "15e54ad3ac92565613980772d8708de6e19cc4690bfd4bb3fb8836522407377b",
-      "newSha256": "6ac974fd2b09748add56493e89f578a35a6a9289e1026515878d81ef3cf129d1",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/autopilot-full.md",
-      "kind": "changed",
-      "oldSha256": "05ca30a16242c19d0c78ba1e88cca66f858d75252cb154fd740099fe292de802",
-      "newSha256": "acf4f4a58c11045f9d3e8807d907a877e61ca6432b079f1087d7d30fc931566f",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/autopilot-stack.md",
-      "kind": "changed",
-      "oldSha256": "007c0a3b12011954a224f54773ef4ad7b75918be0a311914c1b51ad4e794c1e5",
-      "newSha256": "c6bcb18b2ce605e77a2a2225854590a4b9a687911f79331746d91a4fe9a52e60",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/babysit.md",
-      "kind": "changed",
-      "oldSha256": "a0346c37c2313f36a863b80f66ee7b98059c2242adf74fc7b3e48abdb9ec6f5a",
-      "newSha256": "e261c1ff5581e0f8fc6c686f34de4b535f87473e77beabea7dd8323021214610",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/bug-fix.md",
-      "kind": "changed",
-      "oldSha256": "018bbc146ae19145caa6c7e70591fee081b64447dda1c1c4b681c9974d928b13",
-      "newSha256": "66e26542dad131cfd7df80ac0cdf81ed4d85e7b5e3f0eb65b933888760c4831f",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/eval.md",
-      "kind": "changed",
-      "oldSha256": "b862bfa2fae2399abf047a8e80d3e3dddb64003af96fb1cebb625216131e36bb",
-      "newSha256": "a93d449a908236afa6645179651844094b1547dbab4e484cffcdda630e4b90bf",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/feature.md",
-      "kind": "changed",
-      "oldSha256": "3a62cc4a8cbcf144bb9dd05f05420a15be0d38b784d3b141bb730a5852f50a62",
-      "newSha256": "af8ce700b99953741cb547e34308fde0cf6b98ce67e1652c800d0deedf53aba1",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/hillclimb.md",
-      "kind": "changed",
-      "oldSha256": "244f289898fe67a458065e90fe8217c916c5acf61cdee8975ade3f9831a12e91",
-      "newSha256": "942c1565b75ad02a2cb6230dd7c1ebd87e19f59a00319ebac2b6616007bf018f",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/multi-phase-plan.md",
-      "kind": "changed",
-      "oldSha256": "27d310e3fc3937a60b8fcbe1318f9d249a7477a722907bf85b3e4eb3dc436b11",
-      "newSha256": "5f239457bfdec3345c92caa06c59bf0257c662b89353f25a1c02ea942dcd00b1",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/opening-a-pr.md",
-      "kind": "changed",
-      "oldSha256": "ab40de7163c1c6e274f46ee559b2e53ef45673703f601f13f4931c199e6fb90f",
-      "newSha256": "a5aef646de8b651306c2d10974623650e4a013a245aec1c00525bbe0e31bfa76",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/orchestrate.md",
-      "kind": "changed",
-      "oldSha256": "d42b4375f1bd4ce23da0b575a198571a2117df7eea10c3c9fc6d92ae1053f7be",
-      "newSha256": "08dce6c9e7be1d13bc6944ab9b51665f935c531437f5e088bc53d2a62099ef05",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/perf-issue.md",
-      "kind": "changed",
-      "oldSha256": "2b88ad0f880e4d4d755ac19fe52414d6631d6baa816d060f53cf0a7429d7e14a",
-      "newSha256": "c12aa2f82de7651a11676a3d5fea168f539b7f0faaa3a501d279255dd2a469c8",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/refactoring.md",
-      "kind": "changed",
-      "oldSha256": "50f4f7d3d301551f8b8a57c3303c99958c5ca630ae0d0051823b6987c0eb5b96",
-      "newSha256": "0f5dd38113379ea8cf61e2182eca0a7478eea9a869eb40c2dddab3335aeca197",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/runtime-forensics.md",
-      "kind": "changed",
-      "oldSha256": "594f02c40c243a346e1f57b688ecf2ed5e882f21b3d24ed2204d1ac6f1c24a8a",
-      "newSha256": "3463372b578c28f27c236f2627f09b5c5b1e85e86db7399fb984f3892fb450f5",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/session-pickup.md",
-      "kind": "changed",
-      "oldSha256": "1604fb463f7c7410d43fa024ca76c1c1824c166a01fd69d61f073d06fdca2a47",
-      "newSha256": "d194f2a7ef392c1598ef3f0e3b561370ca25c2c7a78308007af4aa46ada8ee12",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/shipping.md",
-      "kind": "changed",
-      "oldSha256": "19f3f6803a7bbe9ff04f624b03e3b55f07ac0a05e991aa00d5fe51239b920b2a",
-      "newSha256": "bf56339bdf7e0223bcff5abf4e8599e3f5b547b3fcc3b4ce9475e6e7dda14a9f",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/trace-forensics.md",
-      "kind": "changed",
-      "oldSha256": "137ce3984fb96e45971fdff4d3c79fa4ccc647c5b30ae4945783b9fb23f8cec7",
-      "newSha256": "ef0bbf79856a4ae1a8993d54c1a1da159cb97623941b652c0069cf75a017e0f5",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/playbooks/worktree-cleanup.md",
-      "kind": "changed",
-      "oldSha256": "fc464dc4121926df1704f483c5feca83717c0a40b4651d3e11bd3aedd89441b6",
-      "newSha256": "be04ae0afe19d4a4da5bcc4e94455f68dbebd1cda6eb0f456ca0d358ecf76c00",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/scripts/check-plan.mjs",
-      "kind": "changed",
-      "oldSha256": "4f9432d9989880b6afc2bdda503d5b12a9d07d357ecf31936b7ab5e83bc80523",
-      "newSha256": "e58c3d871b09d477be00628d69dd23ffa6c2e3a1728f5b867a841baa8e90278b",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/scripts/check-plan.test.ts",
-      "kind": "added",
-      "oldSha256": null,
-      "newSha256": "c80f3ea043b81f219b92c4c8a3af6bdd4f8d32ea596ec15b5b9e0252645f2ae8",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/scripts/orch/orch.test.ts",
-      "kind": "changed",
-      "oldSha256": "773153ac74de6eb15f58d2682f487f5f30672d7efe3ef1d24a131aa9129d279b",
-      "newSha256": "5e80b416bdcd68e4067690ce857345852fd2e0db3dcf3e25607999cd55b963d2",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/scripts/orch/orch.ts",
-      "kind": "changed",
-      "oldSha256": "f091687df627a0b75fabd54af58945a9cd6c7039ef0622012ac9ed60cd8ec434",
-      "newSha256": "47c92c57e8276616d8de94665a126bd832e748036afa8d0ffdbacb7946decb5c",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/scripts/orch/store.ts",
-      "kind": "changed",
-      "oldSha256": "0eae7cf69282e827b1227166f2e32cee3560f2f3e65b3f1f2faf6fb83d3b4c5b",
-      "newSha256": "558cfda533e1ebe7c8d7842604f07e0be7618759cf129b4c2397a8e29516ecea",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/scripts/package.json",
-      "kind": "changed",
-      "oldSha256": "d1f815091209d49763775cc188e8e06ff32d5fec648bffd2272bc25a165e87c3",
-      "newSha256": "fd511a0c01f522e0c781ddd8eccea0e91697a0856c6e6a3261de78a6a0287c72",
-      "disposition": "retain-codex-host-contract",
-      "rationale": "Retain Codex installation, explicit-only discovery, and the existing dependency contract."
-    },
-    {
-      "path": "skills/poteto-mode/scripts/watch-pr/fakes.test-helper.ts",
-      "kind": "changed",
-      "oldSha256": "e53e31b7f03068063f53a99a3591b052aaed66e4e2b196b3a364980f60324ab1",
-      "newSha256": "cf0c5ee61b4a73444c1b775cfb6c81a40d312e055dd21a1f5eae6276e54de13f",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/scripts/watch-pr/github.test.ts",
-      "kind": "changed",
-      "oldSha256": "0cbce011050522938523e36bb42a260e92b812dcd2076930fa681672ad316b24",
-      "newSha256": "70c9f03d8738228763846f2abdd8c7de7be68dba3035041482386a69cbf5639b",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/scripts/watch-pr/github.ts",
-      "kind": "changed",
-      "oldSha256": "d1bbbafbe8e2c703c84da2029de7f2c4011412512f8cf65a42100f46bcb92c8a",
-      "newSha256": "a605b8531468dbe4c07b93663c0993a9c11dc7e9179adde970f5c740396451d9",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
-      "kind": "changed",
-      "oldSha256": "a9fedb25feefd1f57ef6a662f80c99018690170a3a8070773a08eaf694d1d3d9",
-      "newSha256": "146acabcfee9b6fa3342358eb0a9504aa65fd081bbc15b10adf9c1c5485067d2",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/scripts/watch-pr/policy.ts",
-      "kind": "changed",
-      "oldSha256": "68d240505852cf23c9b2dea463342e9e61243f486b3cc86c735d140f9ee7be49",
-      "newSha256": "f2a3e31223d05edc05e5473cc3f8f3cb9bd20c202c30c6abe7f21f0f7aee8fbb",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/scripts/watch-pr/types.ts",
-      "kind": "changed",
-      "oldSha256": "64ba6221e3bfe61bbb292337d199cdec6309455477280efb060203dba34e0e91",
-      "newSha256": "0cac435294dc85ce1ba755e8e67f6c5ab163dfa252f2722d6e3a2d68c58fec59",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/poteto-mode/scripts/worktree-audit.sh",
-      "kind": "changed",
-      "oldSha256": "95b8530f3c0ccada8cabc4b0727c052fbc85c141531375aaace65c427af8aecc",
-      "newSha256": "e0a94e5e5b1ff60638916e440600e15851f7b79bc1a1d1f602fde05d465e2ec0",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "1b0645c25200a19e5863583e117bad684b1b79ba8434823ebf4f6bbcc61e8a75",
+      "newSha256": "ef80c5480b4e9403635036282a9f90d9c3e79ca65e5fb74f96583f320c00c029",
+      "disposition": "port-routing",
+      "rationale": "Add complete-decision ketchup and formal-verification routes while keeping explicit-only help that does not start work."
     },
     {
       "path": "skills/poteto-mode/SKILL.md",
       "kind": "changed",
-      "oldSha256": "31cd02290360ce63564ef22b74d69fc6d90e62181d05a644cbed8f6c47cc9412",
-      "newSha256": "f234661471847cafc4ae9bcb4a9208eb32ed8154ac25b91b2b064ec71bd62167",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "f234661471847cafc4ae9bcb4a9208eb32ed8154ac25b91b2b064ec71bd62167",
+      "newSha256": "2755f102e7a6d0496b429d1031a22fb353e1f3d523543367caeaae5c4ed6f544",
+      "disposition": "port-principle-index",
+      "rationale": "Adopt premise, root-cause, and observable-behavior summaries. The lowercase name was already adapted; keep Codex session activation and authority rules."
     },
     {
-      "path": "skills/principle-build-the-lever/SKILL.md",
+      "path": "skills/principle-attack-the-premise/SKILL.md",
       "kind": "changed",
-      "oldSha256": "458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56",
-      "newSha256": "3434b0ad0c640c6f1d7960be7a8986c3bcdc14e26060360dec29903df60074ff",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/principle-encode-lessons-in-structure/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "77044c83a9ac6df78fc643887ea5f1f11f082adaf14b717c060cdaed03cce863",
-      "newSha256": "228963799189f481827d6f28065f278bc2008ffa37030b1234cbd5814d36b9e9",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/principle-exhaust-the-design-space/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "8583310d7297b7823d75494faa57b003564d436807febecdecbd8321abe5cf6e",
-      "newSha256": "2de83d99f93f60ec6313455b0bc9aa9f0bfb93dd59f414f403691322db00d4db",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/principle-explain-the-number/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
-      "newSha256": "cd5a25f9e7cf023627ccb470dc5faa97542f29b4319496a32b839a8e1e988047",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
+      "newSha256": "6a932884daad4aa189e9b5d1665226bbc75621d4d2a398fd4003bebd382f4599",
+      "disposition": "port-reviewed-content",
+      "rationale": "Replace the actor-census prescription with a rerunnable direct test of the shared premise."
     },
     {
       "path": "skills/principle-fix-root-causes/SKILL.md",
       "kind": "changed",
-      "oldSha256": "ba4cd38da1dcc8fe5432feb64457cba95594736a9b21b2ebf8f8c52aee068707",
-      "newSha256": "2131069d285d82fb799458494f2e4ac8759c9c6a60f9e300828c17874f514c6e",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "2131069d285d82fb799458494f2e4ac8759c9c6a60f9e300828c17874f514c6e",
+      "newSha256": "8df3c8c3fe57eb0055a5c8efab8ab144557fdf301da70b1cdc77a3a3ef3f3052",
+      "disposition": "port-reviewed-content",
+      "rationale": "Distinguish legitimate states requiring handling from invalid states whose producer must be fixed; retain reproduction and persisted-state diagnosis."
     },
     {
-      "path": "skills/principle-guard-the-context-window/SKILL.md",
+      "path": "skills/principle-make-operations-idempotent/SKILL.md",
       "kind": "changed",
-      "oldSha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
-      "newSha256": "af0b9dd70b43628ce4a59a4d332e9d9ad055084e460f430e7a757495c627e81a",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "540738217c3da7bf513b9886924ad6a2bc77e58be867f5bd2e1831c74bf2ce70",
+      "newSha256": "7aa9327cf1f1aa057e95d47a0a78bd88a8f9d556b608866fee939d455a53a019",
+      "disposition": "port-reviewed-content",
+      "rationale": "Derive each step from observed state and require evidence of staleness instead of a universal PID-lock recipe."
     },
     {
-      "path": "skills/principle-laziness-protocol/SKILL.md",
+      "path": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
       "kind": "changed",
-      "oldSha256": "9006579e9e3f33955d17569733db688ae65f22577dc3b21803d219a5a8445aff",
-      "newSha256": "1be6e7a435f26a75a76eb848b9c3d611b9977d0f5822361753244da25ca3ca45",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/principle-minimize-reader-load/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "42551c5dc74cd578163c148da552db3ff67d29b78600ef216bfd311fb828fe69",
-      "newSha256": "1ea2b7fef2391cae5844c4efdbd59031f775e8a52d06b7495d707229a200dcca",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/principle-model-the-domain/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "bbadbb9a723fac3f76e782ae45665eb94058ec10993e4bae36d4dc6b0e4eac07",
-      "newSha256": "52c0d85e0c3827c41c18299b642657d7b47eaf77b7b31609e42e0df42b84c75f",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/principle-never-block-on-the-human/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "f2764bb9338cbfc788c903cf4b9cd0a5f4042d3a04dd6d59cbd525d9beaadd0a",
-      "newSha256": "05030a7a083c337676f793881b4e93cd218e8f1dd676529f56e6ac1d3efb8d1f",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/principle-redesign-from-first-principles/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "a1c7fd0a96b40e12a74bceb0e6bb20a9666dd844dcabfb624acb27da23b929fe",
-      "newSha256": "170e0a658783e43fee8ec5a8c2422a4abb8f69cef621dd1819a95910b8207034",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/principle-subtract-before-you-add/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "a983a50e732c1ed315eba7aaf47a61329e31c4794eb1ab9d25d9945265b31e03",
-      "newSha256": "8c93bb9d1a7f38e2ef37655d93f0e790fa59903105af3d500cc8a663ebe45f3f",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
+      "newSha256": "580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6",
+      "disposition": "port-reviewed-content",
+      "rationale": "Adopt removal of redundant migration prose and keep the conditions for coordinated internal API changes; preserve the normalized Codex name."
     },
     {
       "path": "skills/principle-test-behavior-not-implementation/SKILL.md",
       "kind": "changed",
-      "oldSha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
-      "newSha256": "b2b73ba42920f9c3174ecdf808ec6e4591b3a9266ada9a05814f386004266d3a",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "b2b73ba42920f9c3174ecdf808ec6e4591b3a9266ada9a05814f386004266d3a",
+      "newSha256": "f7223698623b6a26fea49c751e466b38e6691b1f32ce841d3983e7ffbe2b74a6",
+      "disposition": "port-reviewed-content",
+      "rationale": "Replace assertion-shape bans with observable-contract checks that fail for broken behavior and survive internal refactoring."
     },
     {
       "path": "skills/principle-type-system-discipline/SKILL.md",
       "kind": "changed",
-      "oldSha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
-      "newSha256": "2e492cef34bb25a20b9115df61f9ef3a9837e3fda144ffda8079e5f45a1b72e8",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/recall/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "d265b0e5b6dc5b89c0407f3387d24462c988e1990a37d5359735137908128c5a",
-      "newSha256": "b0ceb996259c3404532f61e4b010df4e3d80d7ddbed85b3c302895723eb62a89",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/reflect/references/divergent-reviewer.md",
-      "kind": "changed",
-      "oldSha256": "221dfc0abf7cbcd25e1da3cd87323f5d1050fc3bf652e096d093584e183c98fb",
-      "newSha256": "f6030d88e20e906ef5e2d9ba44cb013ce610c49c2fe2ef74c377d32e0dc9e939",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/reflect/references/judgment-reviewer.md",
-      "kind": "changed",
-      "oldSha256": "a40ecb9b28bd2a3491e11a541157fe58efe158e0eda7b61a5006c14590aabe61",
-      "newSha256": "38f917619fbf346062d643e0ad6b12fc952d58678dfcbbf42ffcf6d8b9c08307",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/reflect/references/synthesizer.md",
-      "kind": "changed",
-      "oldSha256": "2f76c847eb45b182dc6fbcbf7d96c8ee7e2986ecfd9e0d640fec44e3cc5a617c",
-      "newSha256": "6af816963de74d1a1aef4070273c1ff533d2072732e488e159ddc0b299fec3cd",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/reflect/references/tooling-reviewer.md",
-      "kind": "changed",
-      "oldSha256": "bc49ced90fa81eaba3083b88aeb430d900a6d8f14ff40c1d6b52263bacfc77b6",
-      "newSha256": "f81b8697e7366fbbc18feba52c6e3253a101f751091364ebc4396a1d9b5753b4",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/reflect/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "31b8fb866ebe084e7fb7f16dc0ea46ab84ffdc838d54f948edc78556f301a497",
-      "newSha256": "1f5a8c246cdee8251f8667d85bd5d97f6c2801f505843c26ddbd6c621632519b",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "2e492cef34bb25a20b9115df61f9ef3a9837e3fda144ffda8079e5f45a1b72e8",
+      "newSha256": "5cdaf79785e3c12b2592b9469ee8c272143eb86ab7a18d8382197cea5fd30106",
+      "disposition": "port-reviewed-content",
+      "rationale": "Adopt concise type guidance and upstream deletions; retain boundary parsing, branding, and authoritative schemas. Detailed constructions and exhaustiveness remain in TypeScript guidance."
     },
     {
       "path": "skills/sharpen/SKILL.md",
-      "kind": "added",
-      "oldSha256": null,
-      "newSha256": "6bcd73916696eb9c5b79b6f960983760c34bcc28937c11142dd8d86b5107aa46",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/show-me-your-work/SKILL.md",
       "kind": "changed",
-      "oldSha256": "bcff5f7f9fd23f92c12b251f9cd6b947e9485e1055cfacb6fdd9cae0789d7550",
-      "newSha256": "920a8217cbb62f92a2222fb81fc9eab17ecd554a0277e444a95a927195139bd1",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "6bcd73916696eb9c5b79b6f960983760c34bcc28937c11142dd8d86b5107aa46",
+      "newSha256": "d895695fcc29b832bf118b842c1d7cf356a69622d63c9d49b40a0c97d8496c80",
+      "disposition": "port-reviewed-content",
+      "rationale": "Remove the rewritten-prompt ban as upstream does; retain the task-framing workflow."
     },
     {
       "path": "skills/swarm/SKILL.md",
       "kind": "changed",
-      "oldSha256": "bdcee4168e22428036e93d7cdeec3f391dbc4132f927f6db2540328c22db0273",
-      "newSha256": "c8fe1b28282e7a051a4041a146a11f076e0fd95252bb010106a58209805303d5",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "c8fe1b28282e7a051a4041a146a11f076e0fd95252bb010106a58209805303d5",
+      "newSha256": "031657cb81e490f9aed5c75d6ff2a4fda35ccafbaf72be604e59481cc4080cdc",
+      "disposition": "port-deletions-retain-runtime-bounds",
+      "rationale": "Remove redundant introduction and aggregation summary. Intentionally retain local worker-count, observable capacity, queueing, isolation, and fallback requirements; deleting them would lose the Codex shared-filesystem contract."
     },
     {
-      "path": "skills/technical-writing/SKILL.md",
+      "path": "skills/typescript-best-practices/references/patterns.md",
       "kind": "changed",
-      "oldSha256": "f5c512ffeec70bc4e0dee50f7bb4c26742e1be77967a6e8b15d1921e1c209ceb",
-      "newSha256": "61fe9c424a798ebf36ad94941f87be049cb8827bdf86d21474a0dde37b513c43",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
+      "newSha256": "12e70c9419a8b3f5d6a1ab80e272c1f00a43ac0b3bbf72d68199033570e5de77",
+      "disposition": "port-brand-example",
+      "rationale": "Replace the AgentId cast with an isAgentId guard backed by isUUID; preserve other local boundary-schema examples."
     },
     {
-      "path": "skills/unslop/SKILL.md",
+      "path": "skills/typescript-best-practices/SKILL.md",
       "kind": "changed",
-      "oldSha256": "195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1",
-      "newSha256": "ccab208e315ce05e2fab8eeee2f7879f1289b5c6844840b2d307adf31c79144f",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "oldSha256": "28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e",
+      "newSha256": "ec1dac086d3708e5940d45d250c30a37dd953b4e3cb2ca0692f5851d7a039e27",
+      "disposition": "port-reviewed-content",
+      "rationale": "Adopt validated brand type guards instead of casts; keep Codex frontmatter and existing schema-validation guidance."
     },
     {
-      "path": "skills/why/references/epistemics.md",
-      "kind": "changed",
-      "oldSha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
-      "newSha256": "d54a2361b2d5973bc3fe2edf62f446d87935974d4b40d47f23b9529f956ca758",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "path": "docs/harness/claude-code.md",
+      "kind": "added",
+      "oldSha256": null,
+      "newSha256": "c79e2283d3a83c6be3dd1cac33f9c074067c95e610ae6e0a16d9fdee84058927",
+      "disposition": "provenance-only",
+      "rationale": "Do not ship Claude tool names, model aliases, private transcript paths, installation instructions, or skip-and-continue rules. Codex keeps its central runtime contract and fails closed on correctness-critical missing capabilities."
     },
     {
-      "path": "skills/why/references/investigator-prompt.md",
-      "kind": "changed",
-      "oldSha256": "6892956a7ab0b5ee6c4babaf4f793703abe89b350ea7cb9463b4a56eea1c8266",
-      "newSha256": "c44afba186f899094f3694e6c9d6de5d14ff7c4ce28b787a9f50fc789c9a7fc3",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/why/references/sources/code-archaeology.md",
-      "kind": "changed",
-      "oldSha256": "8c14aa382f0de40829b2668d43e3f54814480bb93a486c9282ada4003f6b9dbd",
-      "newSha256": "a4a3970e9db448054aed676f3f7feeee667b4b69f0bd57c8fd72b751be687cc7",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/why/references/sources/datadog.md",
-      "kind": "changed",
-      "oldSha256": "ebe9c07bac28e47757ee7f16fb93b0c01d427a08c501957d047f395a2f37b7e7",
-      "newSha256": "b139faac5dc11b8f26c8255dce6033c1a6ac143b038d3dd103f2034c5dbec9cd",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/why/references/sources/incident-postmortem.md",
-      "kind": "changed",
-      "oldSha256": "a899470f05f86029630a13a2696491cc708ca7b56a6e822a69ff6e954d6ff8cf",
-      "newSha256": "bf2661f1a81c37700884a45b77d6289be0c802b065febced31990e6564510839",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/why/references/sources/sentry.md",
-      "kind": "changed",
-      "oldSha256": "6f292bc4fb1548e956f95e1900b9481abf5134254419f1cd9edec95428c82d73",
-      "newSha256": "2d4f83048eac1df530b399e2aed75dd7c9c18577b7665420aaeb96d0ceb0b702",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/why/references/sources/slack.md",
-      "kind": "changed",
-      "oldSha256": "58fee61d024b3700b407e7acbed367944720ff05adfddb6954d36c88368f3ba7",
-      "newSha256": "3bc6309f5c7b26ace3b919dbd7f7b048861dd2020f910fe24f656cc74b3b661c",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/why/references/synthesizer-prompt.md",
-      "kind": "changed",
-      "oldSha256": "733a3e9cf897b1aca56aaddeae01a3832e4bfed024c2f602db2d1bf807d7a73b",
-      "newSha256": "11c62671aa7b7a6e3d36929ffe2b59bf95e6ca664eee4d93e6ee527dd3390ddb",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
-    },
-    {
-      "path": "skills/why/SKILL.md",
-      "kind": "changed",
-      "oldSha256": "442215bf70e491d4d31bd200c197f2ec447445df38e074c40880fc4bf30a1f9e",
-      "newSha256": "144d42e7712723d763e607bc0a969e5f1cdf83ec7228519d87677cc534571bed",
-      "disposition": "port-upstream-with-codex-adaptations",
-      "rationale": "Import the upstream delta while retaining Codex authority, supported history access, profile inheritance, and capability checks."
+      "path": "skills/create-formal-verification-skill/SKILL.md",
+      "kind": "added",
+      "oldSha256": null,
+      "newSha256": "5f5c08d6f5787ce18ffc9f018113e9cc6e7ddcc7878aa7ae94ef56978978497b",
+      "disposition": "port-with-codex-policy",
+      "rationale": "Add bounded formal verification and a broken-variant check. Convert explicit-only frontmatter into agents/openai.yaml allow_implicit_invocation: false under the 2026-10-19 user approval. Add Codex project paths, central authority, verifier-unavailable draft handling, and isolated scratch changes."
     }
   ]
 }

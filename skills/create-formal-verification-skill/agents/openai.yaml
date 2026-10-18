@@ -1,0 +1,8 @@
+interface:
+  display_name: "Create Formal Verification Skill"
+  short_description: "Verify a property and leave a repeatable project skill"
+  default_prompt: "Use $create-formal-verification-skill to verify one high-risk property in this repository."
+policy:
+  products:
+    - CODEX
+  allow_implicit_invocation: false

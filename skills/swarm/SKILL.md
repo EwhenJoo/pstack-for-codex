@@ -7,7 +7,7 @@ description: "Fan out N parallel workers, drain them, and return one report. Use
 
 Delegation and optional capabilities follow `../poteto-mode/references/codex-agent-runtime.md`.
 
-Fan out N isolated workers. They may cover separate slices, race the same brief, or mix both. The parent waits, aggregates, and returns one report. If subagents or safe isolation are unavailable, use the declared sequential-parent or partial-result fallback.
+If subagents or safe isolation are unavailable, use the declared sequential-parent or partial-result fallback.
 
 ## Start
 
@@ -37,8 +37,6 @@ If a worker drops out, reconcile its partial state and make one bounded retry wh
 ## Phase C: Aggregate
 
 Read the terminal results. Drop a result that does not record the SHAs and method its brief names, and respawn that worker once. After a second miss, record a gap. A gap does not count as a pass. For coverage, every required slice needs a result. For a race, apply the selection rule declared up front. Use first pass, rank all, or best-of. Do not paste raw worker dumps.
-
-Keep a compact result table, one-line evidenced issues, and explicit gaps or dropouts.
 
 ## Phase D: Report
 
